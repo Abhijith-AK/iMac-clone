@@ -1,0 +1,5 @@
+<svg class="svg-icon pause-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 85">
+														<path class="control-path circle-opaque" d="M42.5,2.5a40,40,0,1,1-40,40A40,40,0,0,1,42.5,2.5Z" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4px" stroke-linejoin="round"></path>
+														<path class="control-fill pause-line" d="M50,28.25a2,2,0,0,1,2,2v24a2,2,0,1,1-4,0v-24A2,2,0,0,1,50,28.25Z"></path>
+														<path class="control-fill pause-line" d="M35,28.25a2,2,0,0,1,2,2v24a2,2,0,1,1-4,0v-24A2,2,0,0,1,35,28.25Z"></path>
+													</svg>

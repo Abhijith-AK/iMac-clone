@@ -1,0 +1,16 @@
+<svg viewBox="0 0 16 9" data-chevron-icon="" xmlns="http://www.w3.org/2000/svg">
+	<polyline shape-rendering="geometricPrecision" data-chevron-icon-shape="" stroke="currentColor" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-linejoin="round" fill="none" fill-rule="evenodd" points="15.265 .835 8 8.167 .735 .835">
+		<animate data-chevron-animate="expand" attributeName="points" values="15.265 .835 8 8.167 .735 .835;
+					15.25 4.5 8 4.5 .75 4.5;
+					15.265 8.165 8 .835 .735 8.165" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+					0.5;
+					1" calcMode="spline" keySplines="0.12, 0, 0.38, 0;
+						0.2, 1, 0.68, 1"></animate>
+		<animate data-chevron-animate="collapse" attributeName="points" values="15.265 8.165 8 .835 .735 8.165;
+					15.25 4.5 8 4.5 .75 4.5;
+					15.265 .835 8 8.167 .735 .835" dur="320ms" begin="indefinite" fill="freeze" keyTimes="0;
+					0.5;
+					1" calcMode="spline" keySplines="0.2, 0, 0.68, 0;
+						0.2, 1, 0.68, 1"></animate>
+	</polyline>
+</svg>

@@ -1,0 +1,4 @@
+<svg class="svg-icon loading-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 85">
+														<path class="control-path circle-transparent" d="M42.5,2.5a40,40,0,1,1-40,40A40,40,0,0,1,42.5,2.5Z" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4px" stroke-linejoin="round" opacity="0.2"></path>
+														<path class="control-path circle-segment" d="M42.5,2.5a40,40,0,0,1,40,40" fill="none" stroke="#000" stroke-linecap="round" stroke-width="4px" stroke-linejoin="bevel"></path>
+													</svg>

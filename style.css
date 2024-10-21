@@ -1,0 +1,554 @@
+@font-face {
+  font-family: sanfransisco;
+  src: url(./ASSETS/font/SF-Pro-Display-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sanfransisco;
+}
+
+c{
+  width: 100vw;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fbfbfb;
+  backdrop-filter: blur(20px);
+  z-index: 1000; 
+}
+
+
+.head1 {
+  display: flex;
+  justify-content: space-between;
+  color: #bbbb;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+  padding: 0 20%; /* Adjust padding for better responsiveness */
+}
+
+.hover-div{
+  z-index: 2;
+  backdrop-filter: blur(1px);
+  background-color: #fbfbfbd8;
+  padding-bottom: 100vh;
+  display: none;
+}
+
+
+.head2-wrapper{
+  position: sticky !important ;
+  z-index: 1000; 
+  background-color: #fbfbfb;
+  backdrop-filter: blur(20px);
+  
+}
+
+.head2 {
+  padding: 0.5% 20%; 
+}
+
+.head2-links a {
+  color: #909092;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+#white {
+  color: white;
+}
+
+.hero-img{
+  display: none;
+  top: 0;
+  z-index: 1;
+}
+
+.hero-img{
+  margin-top: -80px;
+}
+
+.hero-video,
+.hero-img {
+  position: absolute;
+  top: 0;
+  margin-top: 0.6rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Make sure this is lower than the header */
+}
+
+.hero-video{
+  margin-top: 5rem;
+}
+
+.hoverBox{
+  display: none;
+  gap: 4.2rem;
+  padding: 1.8% 20%;
+  padding-bottom: 4rem;
+  background-color: #fbfbfb;
+  color: #000;
+}
+
+.hoverBox h1{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.hoverBox h4{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #707075;
+  margin-bottom: 0.6rem;
+}
+
+.hoverBox h5{
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Show only the specific hoverBox when hovering over the respective link */
+.hover-div .active {
+  display: flex;
+}
+
+.desc{
+  height: 100vh;
+}
+
+.descdiv{
+  max-width: 50%;
+  margin-top: 3rem;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001; /* Ensure it's above other elements */
+}
+
+.inner-headings{
+  height: 5.5rem;
+  line-height: 5rem;
+  overflow: hidden;
+}
+
+.inner-headings span{
+  position: relative;
+}
+
+.animate{
+  animation: textrot 6s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textrot{
+  0%{
+    top: 0;
+    color: green;
+  }
+  15% {
+    top: -5rem;
+    color: yellow;
+  }
+  30% {
+    top: -10rem;
+    color: orange;
+  }
+  45% {
+    top: -15rem;
+    color: pink;
+  }
+  60% {
+    top: -20rem;
+    color: purple;
+  }
+  75% {
+    top: -25rem;
+    color: blue;
+  }
+  90%{
+    top: -30rem;
+    color: silver;
+  }
+  100%{
+    top: -35.4rem;
+  }
+}
+
+#hue{
+  background: linear-gradient(120deg, orange, red, green 65%,purple  73%, yellow 82%, purple 93%, silver);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vibrantDiv{
+  padding: 0 5%;
+  margin-top: 1rem;
+}
+
+.vibrantHead{
+  padding: 0 15%;
+}
+
+/* grid */
+
+.vibrantGrid{
+  display: grid;
+  justify-content: center; align-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  width: 99%;
+  gap: 1.3rem;
+  padding: 1rem;
+}
+
+.item-1 {
+  grid-row: 1 / 5;
+  grid-column: 1 / 3;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8% 10%;
+}
+
+.item-2 {
+  grid-row: 1 / 3;
+  grid-column: 3 / 5;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8% 10%;
+}
+
+.item-3 {
+  grid-row: 3 / 5;
+  grid-column: 3 / 5;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8% 10%;
+}
+
+.features{
+  width: 100%;
+}
+
+.featuresDiv{
+  padding: 5%;
+  position: relative;
+}
+
+/* .scaling-text {
+  position: absolute;
+  top: 50px;
+  margin-left: 5rem;
+  font-size: 8rem;
+  transition: font-size 0.3s ease;
+  z-index: 1;
+} */
+
+.featuresDiv h1{
+  padding-left: 22%;
+  padding-bottom: 3%;
+}
+
+.d{
+  padding: 0 12%;
+}
+
+.div-item1{
+  margin-top: 30rem;  
+}
+#trigger2{
+  margin-top: 60rem;
+}
+.div-item2{
+  margin-top: 70rem;
+}
+
+#reveal1 {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+#reveal1.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+#reveal2 {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+#reveal2.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+.thunder{
+  bottom: 20%;
+  left: 15%;
+  font-weight: 600;
+}
+
+.featureThird{
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.featureThird image{
+  width: 100%;
+}
+
+.power{
+  padding-left: 15%;
+  font-weight: 600;
+}
+
+.imacDesc{
+  font-weight: 500;
+}
+
+.imacDesc p{
+  color: #868689;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.specifications{
+  background-color: #fafafa;
+}
+
+.specificationsDiv{
+  padding: 0 20%;
+}
+
+.inner-headings2{
+  height: 5.5rem;
+  line-height: 5rem;
+  overflow: hidden;
+}
+
+.inner-headings2 span{
+  position: relative;
+}
+
+
+.animate2{
+  animation: textrot2 6s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textrot2{
+  25%{
+    top: 0;
+    color: orange;
+  }
+  50% {
+    top: -5rem;
+    color: purple;
+  }
+  75% {
+    top: -10rem;
+    color: blue;
+  }
+  100%{
+    top: -15rem;
+  }
+}
+
+.specialAud{
+  padding: 0 10%;
+  background-color: #fafafa;
+}
+
+.m3one p{
+  color: #868689;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.m3imgsec{
+  height: 55rem;
+  overflow: hidden;
+}
+
+.m3img{
+  top: 0;
+  left: 10;
+  right: 10;
+  margin-left: 50%;
+  margin-right: -50%;
+}
+
+.m3img1{
+  top: 0;
+  left: 10;
+  right: 10;
+  margin-left: -50%;
+  margin-right: 50%;
+}
+
+.apps{
+  width: 100%;
+  padding: 0 5%;
+}
+
+.text-wrapper{
+  max-width: 35%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.text-wrapper2{
+  margin: 0 auto;
+  max-width: 35%;
+  margin-top: -10rem;
+}
+
+
+.iphoneImg{
+  top: 0;
+  left: 10;
+  right: 10;
+  margin-left: 40%;
+  margin-right: -40%;
+}
+
+.iphoneImg1{
+  top: 0;
+  left: 10;
+  right: 10;
+  margin-left: -40%;
+  margin-right: 40%;
+}
+/* 
+.card1 img{
+  width: 100%;
+} */
+
+
+.newCards{
+  height: 100vh;
+}
+
+.keyboard{
+  background-color: #fafafa;
+  padding: 15% 0;
+}
+
+.additional>div{
+  background-color: #fafafa;
+}
+
+.worknedu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.work{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background: url(./ASSETS/jpeg/043_business__zvr7zuxx7kie_large.jpg);
+  height: 40rem;
+  max-height: 43rem;
+}
+
+.education{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background: url(./ASSETS/jpeg/073_education__e5hkeos6rbe6_large.jpg);
+  max-height: 43rem;
+  height: 40rem;
+}
+
+#environment{
+  background-color: #d5f4eb;
+}
+
+footer{
+  background-color: #f5f5f7;
+  padding: 0 20%;
+  padding-top: 5%;
+}
+
+
+
+.footcard{
+  width: 30%;
+}
+
+.footcard img{
+  margin: 0 auto;
+}
+
+.footcard h2{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.footcard p{
+  margin: 0 auto;
+  padding: .2rem 0;
+}
+
+.footerrules ol li{
+  padding: .2rem 0;
+}
+
+.links ul li{
+  color: gray;
+  margin: .4rem 0;
+}
+
+.links ul{
+  margin-bottom: .8rem;
+}
