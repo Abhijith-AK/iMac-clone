@@ -49,7 +49,6 @@ header {
 
 
 .head2-wrapper{
-  position: sticky !important ;
   z-index: 1000; 
   background-color: #fbfbfb;
   backdrop-filter: blur(20px);
