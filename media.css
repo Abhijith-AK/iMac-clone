@@ -100,3 +100,32 @@
   }
   
 }
+
+@media screen and (max-width: 692px) {
+  .inner-headings {
+    height: 2rem;
+    margin-top: -1.2rem;
+    overflow: visible;
+  }
+
+  .thunder{
+    bottom: 2%;
+    left: 5%;
+  }
+
+  .power{
+    padding-left: 5%;
+  }
+
+  .imacDesc p{
+    color: #868689;
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+
+  .m3imgsec{
+    height: 40rem;
+    overflow: visible;
+  }
+
+}

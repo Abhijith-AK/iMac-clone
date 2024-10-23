@@ -4,7 +4,10 @@ const image = document.querySelector('.hero-img');
 const links = document.querySelectorAll('.head1 a');
 const hoverDiv = document.querySelector('.hover-div');
 const hoverBoxes = document.querySelectorAll('.hoverBox');
+const heroImg = document.getElementById("hero");
 const standImg = document.getElementById("standImg");
+const sideStand = document.getElementById("sideStand");
+const designStand = document.getElementById("designStand")
 
 const appsTop1 = document.getElementById("apps-top1");
 const appsTop2 = document.getElementById("apps-top2");
@@ -104,8 +107,8 @@ new ScrollMagic.Scene({
   duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
   offset: 50 // move trigger to center of element
 })
-.setClassToggle("#reveal1", "visible") // add class to reveal
-.addTo(controller);
+  .setClassToggle("#reveal1", "visible") // add class to reveal
+  .addTo(controller);
 
 
 // build scene
@@ -115,15 +118,16 @@ new ScrollMagic.Scene({
   duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
   offset: 50 // move trigger to center of element
 })
-.setClassToggle("#reveal2", "visible") // add class to reveal
-.addTo(controller);
+  .setClassToggle("#reveal2", "visible") // add class to reveal
+  .addTo(controller);
 
 // Media queries
 
-var md = window.matchMedia("(max-width: 992px)")
+var md = window.matchMedia("(max-width: 992px)");
+var sm = window.matchMedia("(max-width: 692px)");
 
 const medium = (md) => {
-  if(md.matches) {
+  if (md.matches) {
     standImg.src = "./ASSETS/jpeg/165_design_hero__b1s6t07doqj6_small.jpg"
     appsTop1.src = "./ASSETS/png/104_apps_top_1__ex9jvxybnhm6_medium.png";
     appsTop2.src = "./ASSETS/png/091_apps_top_2__gfbyc2ocle2q_medium.png";
@@ -136,8 +140,21 @@ const medium = (md) => {
   }
 }
 
+const small = (sm) => {
+  if (sm.matches) {
+    heroImg.src = "./ASSETS/jpeg/036_hero_endframe__fpycn08d62ai_small.jpg";
+    sideStand.src = "./ASSETS/jpeg/037_color_side_green__bjxhwofb06b6_small.jpg";
+    designStand.src = "./ASSETS/jpeg/221_design_stand__fkr0lztq4amy_small.jpg";
+  }
+}
+
 medium(md);
+small(sm);
 
 md.addEventListener("change", () => {
-    medium(md);
+  medium(md);
+})
+
+sm.addEventListener("change", () => {
+  small(sm);
 })

@@ -312,21 +312,21 @@
                     <source src="./ASSETS/imac_hero (online-video-cutter.com).mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <img class="hero-img lg:absolute left-0 w-full lg:h-full object-cover lg:top-0 py-2 block lg:hidden"
+                <img id="hero" class="hero-img lg:absolute left-0 w-full lg:h-full object-cover lg:top-0 py-2 block lg:hidden"
                     src="./ASSETS/jpeg/107_hero_endframe__fpycn08d62ai_large_2x.jpg" alt="">
             </div>
         </section>
         <!-- Desc section -->
         <section class="desc flex justify-center py-8">
-            <div class="descdiv py-8 lg:text-center">
-                <h1 class="text-6xl lg:text-7xl font-bold py-5" data-aos="fade-in" data-aos-duration="300">Packed with
+            <div class="descdiv md:py-8 lg:text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold py-5" data-aos="fade-in" data-aos-duration="300">Packed with
                     more juice.
                 </h1>
-                <p class="text-3xl leading-normal" data-aos="fade-in" data-aos-duration="300">The world’s best
+                <p class="text-xl md:text-3xl leading-normal" data-aos="fade-in" data-aos-duration="300">The world’s best
                     all‑in‑one computer,<b> now supercharged by the M3 chip.</b> With a stunning 60.96 cm (24″) display1
                     that gives you all the space you need and an iconic design that livens up any space, iMac is perfect
                     for work and play.</p>
-                <p class="text-2xl font-notmal py-7" data-aos="fade-in" data-aos-duration="300">From ₹134900.00*</p>
+                <p class="text-xl md:text-2xl font-notmal py-7" data-aos="fade-in" data-aos-duration="300">From ₹134900.00*</p>
                 <a class="text-2xl text-sky-600 hover:underline hover:decoration-solid" href="" data-aos="fade-in"
                     data-aos-duration="300">Watch the event ></a>
             </div>
@@ -335,8 +335,8 @@
         <section class="vibrant">
             <div class="vibrantDiv">
                 <div class="vibrantHead">
-                    <h1 class="text-7xl font-bold py-5">Seven vibrant colours. </h1>
-                    <h1 class="flex gap-2 text-7xl font-bold ">
+                    <h1 class="text-4xl md:text-7xl font-bold py-5">Seven vibrant colours. </h1>
+                    <h1 class="flex gap-2 text-4xl md:text-7xl font-bold ">
                         You do
                         <div class="inner-headings right">
                             <span>
@@ -361,7 +361,7 @@
                 </div>
                 <div class="vibrantGrid">
                     <div class="item-1">
-                        <img src="./ASSETS/jpeg/032_color_side_green__bjxhwofb06b6_large.jpg" alt="">
+                        <img id="sideStand" src="./ASSETS/jpeg/032_color_side_green__bjxhwofb06b6_large.jpg" alt="">
                     </div>
                     <div class="item-2">
                         <img src="./ASSETS/jpeg/009_color_front_green__eb8qbnemmre6_large.jpg" alt="">
@@ -384,12 +384,12 @@
         <!-- Features section -->
         <section class="features">
             <div class="featuresDiv flex flex-col items-center justify-center">
-                <h1 class="font-bold scaling-text text-6xl lg:text-7xl">Only <br> 11.5 mm. <br> Now <br> that’s <br>
+                <h1 class="font-bold scaling-text text-4xl md:text-6xl lg:text-7xl">Only <br> 11.5 mm. <br> Now <br> that’s <br>
                     thin.</h1>
                 <div class="d flex">
                     <div class="first-div">
                         <div id="trigger1"></div>
-                        <div id="reveal1" class="div-item1" data-aos="fade-up" data-aos="fade-out"
+                        <div id="reveal1" class="div-item1 hidden md:block" data-aos="fade-up" data-aos="fade-out"
                             data-aos-duration="3000">
                             <img src="./ASSETS/jpeg/005_design_mx__byniycw4xn5y_large.jpg" alt="">
                             <p class="lg:text-2xl lg:my-8">The striking design of iMac is made possible thanks to Apple
@@ -400,7 +400,7 @@
                         alt="Overlapping Image">
                     <div class="second-div">
                         <div id="trigger2"></div>
-                        <div id="reveal2" class="div-item2" data-aos="fade-up" data-aos="fade-out"
+                        <div id="reveal2" class="div-item2 hidden md:block" data-aos="fade-up" data-aos="fade-out"
                             data-aos-duration="3000">
                             <p class="text-xl lg:text-2xl my-8">M3 integrates the processor, graphics, memory and more
                                 onto a
@@ -409,14 +409,14 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="font-bold pt-8 text-5xl"> And less than 5 kilos. </h2>
+                <h2 class="font-bold pt-8 text-3xl md:text-5xl"> And less than 5 kilos. </h2>
                 <div data-aos="flip-up">
-                    <h2 class="font-bold py-5 text-5xl text-cyan-900 p-0">Abracadabra.</h2>
+                    <h2 class="font-bold py-5 text-3xl md:text-5xl text-cyan-900 p-0">Abracadabra.</h2>
                 </div>
             </div>
             <div class="featuresSec relative py-8 my-8">
-                <img src="./ASSETS/jpeg/029_design_stand__fkr0lztq4amy_large.jpg" alt="">
-                <div class="text-xl lg:text-2xl absolute ms-4 thunder" data-aos="fade-in" data-aos-duration="2000">
+                <img id="designStand" src="./ASSETS/jpeg/029_design_stand__fkr0lztq4amy_large.jpg" alt="">
+                <div class=" md:text-xl lg:text-2xl absolute md:ms-4 thunder" data-aos="fade-in" data-aos-duration="2000">
                     <p class="text-orange-600" data-aos="fade-in">Blazingly fast <br> Thunderbolt ports.</p>
                     <p class="" data-aos="fade-in">And speedier file transfers <br> thanks to Wi‑Fi 6E.2</p>
                 </div>
@@ -424,7 +424,7 @@
         </section>
         <!-- temp -->
         <section class="featureThird flex items-center my-8">
-            <div class="text-xl lg:text-2xl absolute ms-8 power" data-aos="fade-in" data-aos-duration="2000">
+            <div class="md:text-xl lg:text-2xl absolute md:ms-8 power" data-aos="fade-in" data-aos-duration="2000">
                 <p class="text-orange-600" data-aos="fade-in">A power connector that <br> easily attaches via magnets.
                 </p>
                 <p class="" data-aos="fade-in">With a colour-matched <br> woven cable. </p>
@@ -436,15 +436,15 @@
             <div class="imac4k relative">
                 <img src="./ASSETS/png/034_display_hardware__cql9kavlt4ya_medium.png" alt="">
                 <video autoplay muted loop
-                    class="absolute w-[95%] lg:w-[63.5rem] lg:h-[35.68rem] top-4  lg:top-7 start-4 lg:start-7">
+                    class="absolute w-[95%] lg:w-[63.5rem] lg:h-[35.68rem] top-2 md:top-4 lg:top-7 start-2 md:start-4 lg:start-7">
                     <source
                         src="https://www.apple.com/105/media/us/imac/2023/4e499881-f23c-4108-bcce-5dff3399bebe/anim/display-hero/large_2x.mp4">
                 </video>
                 <h1 class="text-4xl lg:text-7xl absolute top-1/4 left-1/4 text-white">Brilliant 4.5k Display</h1>
             </div>
             <div class="imacDesc lg:my-8 py-8 px-8 lg:px-0 lg:w-4/6">
-                <h2 class="font-bold pt-8 mt-8 text-5xl text-cyan-900 p-0" data-aos="fade-in">See the big picture.</h2>
-                <h2 class="text-5xl font-bold" data-aos="fade-in">And all the details.</h2>
+                <h2 class="font-bold pt-8 mt-8 text-3xl md:text-5xl text-cyan-900 p-0" data-aos="fade-in">See the big picture.</h2>
+                <h2 class="text-3xl md:text-5xl font-bold" data-aos="fade-in">And all the details.</h2>
                 <p class="lg:w-4/6  mt-8" data-aos="fade-in">With its expansive 60.96 cm (24″) Retina display, iMac
                     offers
                     a brilliant canvas
@@ -459,19 +459,19 @@
         <!-- Specifications section -->
         <section class="specifications py-8">
             <div class="specificationsDiv py-8 my-8">
-                <h1 class="text-6xl lg:text-7xl my-3 font-bold flex items-center gap-2">Best-in-class.
-                    <div class="inner-headings2"><span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl my-3 font-bold md:flex items-center gap-2">Best-in-class.
+                    <div class="inner-headings2 "><span>
                             Camera. <br>
                             Mics. <br>
                             Speakers. <br>
                             Period. <br>
                         </span></div>
                 </h1>
-                <h1 class="text-6xl lg:text-7xl font-bold">You’ll really stand out.</h1>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">You’ll really stand out.</h1>
                 <div class="imacDesc lg:my-8 py-8 ">
-                    <h2 class="font-bold pt-8 mt-8 text-5xl text-orange-400 p-0" data-aos="fade-in">1080p FaceTime HD
+                    <h2 class="font-bold pt-8 mt-8 text-3xl md:text-5xl text-orange-400 p-0" data-aos="fade-in">1080p FaceTime HD
                         camera.</h2>
-                    <h2 class="text-5xl font-bold" data-aos="fade-in">Ready for your close-up.</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold" data-aos="fade-in">Ready for your close-up.</h2>
                     <p class="lg:w-[76%]  mt-8" data-aos="fade-in">It’s the best camera system ever in an iMac. With a
                         built‑in image signal
                         processor, M3 boosts picture quality by analysing and enhancing each pixel at over a trillion
@@ -483,14 +483,14 @@
                 </div>
                 <div class="specImg py-8 my-8 flex flex-col items-center relative" data-aos="fade-in">
                     <img src="./ASSETS/png/001_facetime_hw__ckl65spxnbqu_large.png" alt="">
-                    <img width="95%" class="absolute mt-4 lg:mt-7"
+                    <img width="95%" class="absolute mt-2 md:mt-4 lg:mt-7"
                         src="./ASSETS/jpeg/225_facetime_screen__elpgmi8urpua_medium_2x.jpg" alt="">
                 </div>
 
                 <div class="imacDesc my-8 py-8 ">
-                    <h2 class="font-bold pt-8 mt-8 text-5xl text-blue-900 p-0" data-aos="fade-in">Studio-quality mics.
+                    <h2 class="font-bold pt-8 mt-8 text-3xl md:text-5xl text-blue-900 p-0" data-aos="fade-in">Studio-quality mics.
                     </h2>
-                    <h2 class="text-5xl font-bold" data-aos="fade-in">For high-quality conversations.</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold" data-aos="fade-in">For high-quality conversations.</h2>
                     <p class="lg:w-[76%]  mt-8" data-aos="fade-in">Whether you’re on a video call, recording a podcast
                         or
                         livestreaming, the microphones on iMac make sure your voice comes through crisp and clear. The
@@ -500,13 +500,13 @@
                 </div>
                 <div class="specImg py-8 my-8 flex flex-col items-center relative" data-aos="fade-in">
                     <img src="./ASSETS/png/015_audio_mics_hw__csn9aya5vyeu_large.png" alt="">
-                    <img width="95%" class="absolute mt-4 lg:mt-7"
+                    <img width="95%" class="absolute mt-2 md:mt-4 lg:mt-7"
                         src="./ASSETS/jpeg/226_audio_mics_screen__c2otqdvoa78m_medium_2x.jpg" alt="">
                 </div>
                 <div class="imacDesc my-8 py-8 ">
-                    <h2 class="font-bold pt-8 mt-8 text-5xl text-orange-400 p-0" data-aos="fade-in">Six-speaker sound
+                    <h2 class="font-bold pt-8 mt-8 text-3xl md:text-5xl text-orange-400 p-0" data-aos="fade-in">Six-speaker sound
                         system.</h2>
-                    <h2 class="text-5xl font-bold" data-aos="fade-in">Audio that really fills a room..</h2>
+                    <h2 class="text-3xl md:text-5xl font-bold" data-aos="fade-in">Audio that really fills a room..</h2>
                 </div>
                 <div class="specImg py-8 my-8 flex flex-col items-center relative" data-aos="fade-in">
                     <video autoplay muted loop>
@@ -514,22 +514,22 @@
                             src="https://www.apple.com/105/media/ww/imac/2023/4e499881-f23c-4108-bcce-5dff3399bebe/anim/speakers-room/large.mp4">
                     </video>
                 </div>
-                <div class="imacAudi flex  justify-between gap-4 lg:gap-2 py-8">
-                    <p class="lg:text-2xl  lg:w-[50%]">iMac brings incredible, room‑filling audio to any space. Two
+                <div class="imacAudi md:flex md:flex-row-reverse justify-between gap-4 lg:gap-2 py-8">
+                    <img class="md:w-[50%] lg:w-auto" src="./ASSETS/jpeg/062_speakers_internals__dmuc4qwjwei6_large.jpg"
+                        alt="">
+                    <p class="lg:text-2xl lg:w-[50%] my-3">iMac brings incredible, room‑filling audio to any space. Two
                         pairs of
                         force‑cancelling woofers create rich, deep bass — and each is balanced with a high‑performance
                         tweeter for a massive soundstage that takes music, movies and more to the next level. iMac also
                         supports Spatial Audio with Dolby Atmos. And when you combine that with a 4.5K Retina display,
                         it’s like bringing the whole theatre home.</p>
-                    <img class="w-[50%] lg:w-auto" src="./ASSETS/jpeg/062_speakers_internals__dmuc4qwjwei6_large.jpg"
-                        alt="">
                 </div>
             </div>
             <!-- special audio -->
-            <div class="specialAud relative py-8 pb-[12%] w-[100%]">
+            <div class="specialAud relative py-8 md:pb-[12%] w-[100%]">
                 <div class="specImg py-8 my-8 flex flex-col items-center relative lg:mt-[20%]">
                     <img class="" src="./ASSETS/png/026_spacialaudio_imac_hw__bu56j6uv29bm_large.png" alt="">
-                    <img class="absolute mt-3 lg:mt-6 w-[95%] lg:w-[73.5%]"
+                    <img class="absolute mt-2 md:mt-3 lg:mt-6 w-[95%] lg:w-[73.5%]"
                         src="./ASSETS/jpeg/256_spacialaudio_imac_screen__faau02zud8qe_medium_2x.jpg" alt="">
                 </div>
                 <img class="absolute top-0 start-0  lg:px-[8%]" width="100%"
@@ -537,13 +537,13 @@
             </div>
         </section>
         <!-- M3 Section -->
-        <section class="m3 my-8 py-8">
+        <section class="m3 md:my-8 py-8">
             <div class="m3div px-[5%] lg:px-[20%]">
                 <div class="m3one my-8 py-8">
                     <div><img src="./ASSETS/jpeg/066_performance_mx__fudoftjes56q_large.jpg" alt=""></div>
-                    <h1 class="text-7xl font-bold text-red-700 pt-8">M3 and macOS.</h1>
-                    <h1 class="text-7xl font-bold pt-2">Get it all done with <br> flying colours.</h1>
-                    <p class="text-2xl pt-8 w-[70%]">M3 and macOS bring the latest and most advanced technologies to
+                    <h1 class="text-4xl md:text-7xl font-bold text-red-700 pt-8">M3 and macOS.</h1>
+                    <h1 class="text-4xl md:text-7xl font-bold pt-2">Get it all done with <br> flying colours.</h1>
+                    <p class="text-xl md:text-2xl pt-8 md:w-[70%]">M3 and macOS bring the latest and most advanced technologies to
                         iMac, delivering exceptional levels of performance, efficiency and security. Built using a
                         next‑generation process, M3 lets you zip through hundreds of browser tabs, build a
                         multimedia‑rich pitch deck and even explore new worlds with jaw‑dropping graphics. It’s<b
@@ -551,16 +551,16 @@
                         with the latest Intel Core i7 processor.3 And it stays cool and quiet, even while tackling
                         intense workloads. That’s the power of hardware, software and silicon — all designed together.
                     </p>
-                    <div class="upto flex gap-[10%] lg:w-[65%] py-8">
-                        <p class="w-[18%] text-base" style="color: grey; font-weight: 100;">Up to <br>
+                    <div class="upto flex flex-wrap md:flex-nowrap gap-[15%] md:gap-[10%] lg:w-[65%] py-8">
+                        <p class="w-[35%] md:w-[18%] text-base" style="color: grey; font-weight: 100;">Up to <br>
                             <span class="text-6xl text-red-700 font-extrabold py-2">2x</span><br>
                             faster than iMac with M1 <sup>4</sup>
                         </p>
-                        <p class="w-[25%] text-base" style="color: grey; font-weight: 100;">Up to <br>
+                        <p class="w-[35%] md:w-[25%] text-base" style="color: grey; font-weight: 100;">Up to <br>
                             <span class="text-6xl text-red-700 font-extrabold ">2.5x</span><br>
                             faster than the most popular Intel‑based 27″ iMac models <sup>5</sup>
                         </p>
-                        <p class="w-[25%] text-base" style="color: grey; font-weight: 100;">Up to <br>
+                        <p class="w-[35%] md:w-[25%] text-base" style="color: grey; font-weight: 100;">Up to <br>
                             <span class="text-6xl text-red-700 font-extrabold ">4x</span><br>
                             faster than the most powerful Intel‑based 21.5″ iMac model <sup>6</sup>
                         </p>
@@ -568,42 +568,42 @@
                 </div>
             </div>
 
-            <div class="m3imgsec my-8 py-8 mb-[5%] flex items-center relative">
-                <p class="text-3xl w-[37.5%] ps-[5%] lg:ps-[20%]" data-aos="fade-in"><b>The world’s fastest
+            <div class="m3imgsec overflow-hidden my-8 py-8 mb-[5%] flex flex-col md:flex-row items-center relative">
+                <p class="text-3xl md:w-[37.5%] ps-[5%] lg:ps-[20%]" data-aos="fade-in"><b>The world’s fastest
                         browser,<span class="text-red-700"> Safari
                             runs up to 30% faster.<sup>7</sup></span> Create personalised profiles and securely share
                         your passwords and passkeys.</b></p>
-                <div class="m3img absolute">
+                <div class="m3img md:absolute my-8 md:my-0">
                     <div class="relative">
                         <img width="100%" src="./ASSETS/png/021_performance_hardware__gll1j26v7pua_large.png" alt="">
-                        <img width="95%" class="absolute top-0 mt-5 lg:mt-7 ms-5 lg:ms-7"
+                        <img width="95%" class="absolute top-0 mt-2 md:mt-5 lg:mt-7 ms-2 md:ms-5 lg:ms-7"
                             src="./ASSETS/jpeg/024_performance_safari_screen__f2hmfihhf3mi_large.jpg" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="m3imgsec my-8 py-8 mb-[5%] flex justify-end items-center relative">
-                <p class="text-3xl w-[37.5%] pe-[5%] lg:pe-[20%]" data-aos="fade-in"><b>M3 makes gaming an absolute
+            <div class="m3imgsec overflow-hidden my-8 py-8 mb-[5%] flex flex-col md:flex-row justify-end items-center relative">
+                <p class="text-3xl md:w-[37.5%] ps-[5%] md:pe-[5%] lg:pe-[20%]" data-aos="fade-in"><b>M3 makes gaming an absolute
                         blast with
                         <span class="text-red-700">up to 50% faster frame rates</span> and hardware-accelerated ray
                         tracing for more lifelike lighting and reflections.<sup>8</sup></b></p>
-                <div class="m3img1 absolute">
+                <div class="m3img1 md:absolute my-8 md:my-0">
                     <div class="relative">
                         <img width="100%" src="./ASSETS/png/021_performance_hardware__gll1j26v7pua_large.png" alt="">
-                        <img width="95%" class="absolute top-0 mt-5 lg:mt-7 ms-5 lg:ms-7"
+                        <img width="95%" class="absolute top-0 mt-2 md:mt-5 lg:mt-7 ms-2 md:ms-5 lg:ms-7"
                             src="./ASSETS/jpeg/012_performance_gaming_screen__fr41vlhtjnee_large.jpg" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="m3imgsec my-8 py-8 mb-[5%] flex items-center relative">
-                <p class="text-3xl w-[37.5%] ps-[5%] lg:ps-[20%]" data-aos="fade-in"><b>Fly through edits<span
+            <div class="m3imgsec my-8 py-8 mb-[5%] flex flex-col md:flex-row items-center relative">
+                <p class="text-3xl md:w-[37.5%] ps-[5%] lg:ps-[20%]" data-aos="fade-in"><b>Fly through edits<span
                             class="text-red-700"> up to two times faster in Adobe Photoshop.<sup>9</sup></span> And work
                         with massive 100‑megapixel images without a hitch.</b></p>
-                <div class="m3img absolute">
+                <div class="m3img md:absolute my-8 md:my-0">
                     <div class="relative">
                         <img width="100%" src="./ASSETS/png/021_performance_hardware__gll1j26v7pua_large.png" alt="">
-                        <img width="95%" class="absolute top-0 mt-5 lg:mt-7 ms-4 lg:ms-7"
+                        <img width="95%" class="absolute top-0 mt-2 md:mt-5 lg:mt-7 ms-2 md:ms-4 lg:ms-7"
                             src="./ASSETS/jpeg/006_performance_lightroom_screen__ffd9hbl04ea2_large.jpg" alt="">
                     </div>
                 </div>
