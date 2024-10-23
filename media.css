@@ -1,0 +1,102 @@
+@media screen and (max-width: 992px) {
+  .head1 {
+    padding: 0 2%;
+    justify-content: space-around;
+  }
+
+  #search {
+    margin-left: auto;
+  }
+
+  .bar {
+    display: block;
+    width: 50;
+  }
+
+  .aShow {
+    padding: 0 5%;
+  }
+
+  .aHide {
+    display: none;
+  }
+
+  .hover-div {
+    display: none;
+  }
+
+  .head2 {
+    padding: 0.5% 2%;
+  }
+
+  .hero-img {
+    margin-top: 3rem;
+    position: relative;
+    object-fit: contain;
+  }
+
+  .desc {
+    height: auto;
+  }
+
+  .descdiv {
+    max-width: 80%;
+    margin-top: 2rem;
+  }
+
+  .vibrantDiv {
+    padding: 0 2%;
+    margin-top: 1rem;
+  }
+
+  .vibrantHead {
+    padding: 0 2%;
+  }
+
+  .inner-headings {
+    height: 5.5rem;
+    overflow: hidden;
+  }
+
+  .d {
+    padding: 0 2%;
+  }
+
+  .specificationsDiv {
+    padding: 0 5%;
+  }
+
+  .inner-headings2 {
+    height: 4rem;
+  }
+
+
+  .apps {
+    width: 100%;
+    padding: 0 1%;
+  }
+
+  .text-wrapper2{
+    margin: 0 auto;
+    max-width: 65%;
+    margin-top: 3rem;
+  }
+
+  .m3imgsec{
+    height: 35rem;
+    overflow: hidden;
+  }
+
+  .work{
+    height: 30rem;
+  }
+  
+  .education{
+    height: 30rem;
+  }
+  
+  footer{
+    padding: 0 5%;
+  }
+  
+}

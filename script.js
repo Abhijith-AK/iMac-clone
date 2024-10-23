@@ -4,6 +4,16 @@ const image = document.querySelector('.hero-img');
 const links = document.querySelectorAll('.head1 a');
 const hoverDiv = document.querySelector('.hover-div');
 const hoverBoxes = document.querySelectorAll('.hoverBox');
+const standImg = document.getElementById("standImg");
+
+const appsTop1 = document.getElementById("apps-top1");
+const appsTop2 = document.getElementById("apps-top2");
+const appsTop3 = document.getElementById("apps-top3");
+const appsMiddle = document.getElementById("apps-middle");
+const appsBottom1 = document.getElementById("apps-bottom1");
+const appsBottom2 = document.getElementById("apps-bottom2");
+const appsBottom3 = document.getElementById("apps-bottom3");
+const env = document.getElementById("env");
 
 AOS.init();
 // init controller
@@ -107,3 +117,27 @@ new ScrollMagic.Scene({
 })
 .setClassToggle("#reveal2", "visible") // add class to reveal
 .addTo(controller);
+
+// Media queries
+
+var md = window.matchMedia("(max-width: 992px)")
+
+const medium = (md) => {
+  if(md.matches) {
+    standImg.src = "./ASSETS/jpeg/165_design_hero__b1s6t07doqj6_small.jpg"
+    appsTop1.src = "./ASSETS/png/104_apps_top_1__ex9jvxybnhm6_medium.png";
+    appsTop2.src = "./ASSETS/png/091_apps_top_2__gfbyc2ocle2q_medium.png";
+    appsTop3.src = "./ASSETS/png/119_apps_top_3__dy5dooarc1km_medium.png";
+    appsMiddle.src = "./ASSETS/png/081_apps_middle_base__cwf2r0yp6cqe_medium.png";
+    appsBottom1.src = "./ASSETS/png/086_apps_bottom_1__doob1p0g3gk2_medium.png";
+    appsBottom2.src = "./ASSETS/png/130_apps_bottom_2__ddvs82ggppyu_medium.png";
+    appsBottom3.src = "./ASSETS/png/115_apps_bottom_3__fxwuekyzsieu_medium.png";
+    env.src = "./ASSETS/png/189_environment__em2kqpmluqmq_medium.png";
+  }
+}
+
+medium(md);
+
+md.addEventListener("change", () => {
+    medium(md);
+})

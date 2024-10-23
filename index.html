@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
@@ -19,19 +20,20 @@
         <header class=" inset-x-0 border-2 border-b-black-100">
             <!-- Header first section -->
             <div class="head1 relative">
-                <a id="apple" href=""><img src="./ASSETS/svg/03_icon_large.svg" alt=""></a>
-                <a id="store" href=""><img src="./ASSETS/svg/store.svg" alt=""> </a>
-                <a id="mac" href=""><img src="./ASSETS/svg/mac.svg" alt=""> </a>
-                <a id="ipad" href=""><img src="./ASSETS/svg/iPad.svg" alt=""> </a>
-                <a id="iphone" href=""><img src="./ASSETS/svg/iPhone.svg" alt=""> </a>
-                <a id="watch" href=""><img src="./ASSETS/svg/watch.svg" alt=""> </a>
-                <a id="airpods" href=""><img src="./ASSETS/svg/AirPods.svg" alt=""> </a>
-                <a id="tvnhome" href=""><img src="./ASSETS/svg/Tv&Home.svg" alt=""> </a>
-                <a id="entertainment" href=""><img src="./ASSETS/svg/Entertainment.svg" alt=""> </a>
-                <a id="accessories" href=""><img src="./ASSETS/svg/Accessories.svg" alt=""> </a>
-                <a id="support" href=""><img src="./ASSETS/svg/support.svg" alt=""> </a>
-                <a id="search" href=""><img src="./ASSETS/svg/search.svg" alt=""> </a>
-                <a id="bag" href=""><img src="./ASSETS/svg/bag.svg" alt=""> </a>
+                <a id="apple" class="aShow" href=""><img src="./ASSETS/svg/03_icon_large.svg" alt=""></a>
+                <a id="store" class="aHide" href=""><img src="./ASSETS/svg/store.svg" alt=""> </a>
+                <a id="mac" class="aHide" href=""><img src="./ASSETS/svg/mac.svg" alt=""> </a>
+                <a id="ipad" class="aHide" href=""><img src="./ASSETS/svg/iPad.svg" alt=""> </a>
+                <a id="iphone" class="aHide" href=""><img src="./ASSETS/svg/iPhone.svg" alt=""> </a>
+                <a id="watch" class="aHide" href=""><img src="./ASSETS/svg/watch.svg" alt=""> </a>
+                <a id="airpods" class="aHide" href=""><img src="./ASSETS/svg/AirPods.svg" alt=""> </a>
+                <a id="tvnhome" class="aHide" href=""><img src="./ASSETS/svg/Tv&Home.svg" alt=""> </a>
+                <a id="entertainment" class="aHide" href=""><img src="./ASSETS/svg/Entertainment.svg" alt=""> </a>
+                <a id="accessories" class="aHide" href=""><img src="./ASSETS/svg/Accessories.svg" alt=""> </a>
+                <a id="support" class="aHide" href=""><img src="./ASSETS/svg/support.svg" alt=""> </a>
+                <a id="search" class="aShow" href=""><img src="./ASSETS/svg/search.svg" alt=""> </a>
+                <a id="bag" class="aShow" href=""><img src="./ASSETS/svg/bag.svg" alt=""> </a>
+                <img src="./ASSETS/svg/33_f177e5ad-92cb-470d-bcd8-f470defe7c6a.svg" alt="" class="bar">
                 <!-- Hover div -->
                 <div class="hover-div absolute inset-x-0 top-full hidden">
                     <div class="store hoverBox">
@@ -289,33 +291,36 @@
             <!-- Header Second section -->
             <div class="head2-wrapper">
                 <div class="head2 py-2 flex justify-between items-center">
-                    <div class="title text-xl">iMac</div>
-                    <div class="head2-links flex justify-around	w-1/2 text-sm font-thin white">
-                        <a>Overview</a>
-                        <a>Tech Specs</a>
-                        <a>Compare</a>
-                        <a>Switch from PC to Mac</a>
+                    <div class="title text-xl px-[5%] lg:px-0">iMac</div>
+                    <div class="head2-links justify-end flex lg:justify-around w-1/2 text-sm font-thin white">
+                        <a class="aHide">Overview</a>
+                        <a class="aHide">Tech Specs</a>
+                        <a class="aHide">Compare</a>
+                        <a class="aHide">Switch from PC to Mac</a>
+                        <img class="bar px-[2%] w-8 lg:px-0"
+                            src="./ASSETS/svg/11_1cf3a4a5-b726-4fbe-b8ba-11f4c205e27d.svg" alt="">
                         <a id="white" class="rounded-full bg-blue-700 white px-2.5 py-0.5">Buy</a>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Hero section -->
-        <section class="hero relative bg-black text-white min-h-screen flex items-center justify-center">
+        <section class="hero relative lg:bg-black text-white lg:min-h-screen flex items-center justify-center">
             <div class="w-full max-w-7xl mx-auto px-4">
-                <video class="hero-video w-full h-full object-cover absolute top-1 py-2 left-0" autoplay muted
-                    playsinline>
+                <video class="hero-video w-full h-full object-cover absolute top-1 py-2 left-0 hidden lg:block" autoplay
+                    muted playsinline>
                     <source src="./ASSETS/imac_hero (online-video-cutter.com).mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <img class="hero-img absolute left-0 w-full h-full object-cover top-0 py-2"
+                <img class="hero-img lg:absolute left-0 w-full lg:h-full object-cover lg:top-0 py-2 block lg:hidden"
                     src="./ASSETS/jpeg/107_hero_endframe__fpycn08d62ai_large_2x.jpg" alt="">
             </div>
         </section>
         <!-- Desc section -->
         <section class="desc flex justify-center py-8">
-            <div class="descdiv py-8 text-center">
-                <h1 class="text-7xl font-bold py-5" data-aos="fade-in" data-aos-duration="300">Packed with more juice.
+            <div class="descdiv py-8 lg:text-center">
+                <h1 class="text-6xl lg:text-7xl font-bold py-5" data-aos="fade-in" data-aos-duration="300">Packed with
+                    more juice.
                 </h1>
                 <p class="text-3xl leading-normal" data-aos="fade-in" data-aos-duration="300">The world’s best
                     all‑in‑one computer,<b> now supercharged by the M3 chip.</b> With a stunning 60.96 cm (24″) display1
@@ -335,13 +340,13 @@
                         You do
                         <div class="inner-headings right">
                             <span>
-                                green. <br />
-                                yellow. <br />
-                                orange. <br />
-                                pink. <br />
-                                purple. <br />
-                                blue. <br />
-                                silver. <br />
+                                <p class="hidden lg:block">green.</p> <br class="hidden lg:block" />
+                                <p class="hidden lg:block">yellow.</p> <br class="hidden lg:block" />
+                                <p class="hidden lg:block">orange.</p> <br class="hidden lg:block" />
+                                <p class="hidden lg:block">pink.</p> <br class="hidden lg:block" />
+                                <p class="hidden lg:block"> purple.</p> <br class="hidden lg:block" />
+                                <p class="hidden lg:block">blue.</p> <br class="hidden lg:block" />
+                                <p class="hidden lg:block">silver.</p> <br class="hidden lg:block" />
                                 <h1 id="hue">hue. </h1><br />
                             </span>
                         </div>
@@ -379,23 +384,26 @@
         <!-- Features section -->
         <section class="features">
             <div class="featuresDiv flex flex-col items-center justify-center">
-                <h1 class="font-bold scaling-text text-7xl">Only <br> 11.5 mm. <br> Now <br> that’s <br> thin.</h1>
+                <h1 class="font-bold scaling-text text-6xl lg:text-7xl">Only <br> 11.5 mm. <br> Now <br> that’s <br>
+                    thin.</h1>
                 <div class="d flex">
                     <div class="first-div">
                         <div id="trigger1"></div>
                         <div id="reveal1" class="div-item1" data-aos="fade-up" data-aos="fade-out"
                             data-aos-duration="3000">
                             <img src="./ASSETS/jpeg/005_design_mx__byniycw4xn5y_large.jpg" alt="">
-                            <p class="text-2xl my-8">The striking design of iMac is made possible thanks to Apple
+                            <p class="lg:text-2xl lg:my-8">The striking design of iMac is made possible thanks to Apple
                                 silicon — with a big leap in performance from M3.</p>
                         </div>
                     </div>
-                    <img src="./ASSETS/jpeg/079_design_hero__b1s6t07doqj6_large.jpg" alt="Overlapping Image">
+                    <img id="standImg" src="./ASSETS/jpeg/079_design_hero__b1s6t07doqj6_large.jpg"
+                        alt="Overlapping Image">
                     <div class="second-div">
                         <div id="trigger2"></div>
                         <div id="reveal2" class="div-item2" data-aos="fade-up" data-aos="fade-out"
                             data-aos-duration="3000">
-                            <p class="text-2xl my-8">M3 integrates the processor, graphics, memory and more onto a
+                            <p class="text-xl lg:text-2xl my-8">M3 integrates the processor, graphics, memory and more
+                                onto a
                                 single chip, packing an entire computer into a space so thin it practically disappears.
                             </p>
                         </div>
@@ -408,7 +416,7 @@
             </div>
             <div class="featuresSec relative py-8 my-8">
                 <img src="./ASSETS/jpeg/029_design_stand__fkr0lztq4amy_large.jpg" alt="">
-                <div class="text-4xl absolute ms-8 thunder" data-aos="fade-in" data-aos-duration="2000">
+                <div class="text-xl lg:text-2xl absolute ms-4 thunder" data-aos="fade-in" data-aos-duration="2000">
                     <p class="text-orange-600" data-aos="fade-in">Blazingly fast <br> Thunderbolt ports.</p>
                     <p class="" data-aos="fade-in">And speedier file transfers <br> thanks to Wi‑Fi 6E.2</p>
                 </div>
@@ -416,7 +424,7 @@
         </section>
         <!-- temp -->
         <section class="featureThird flex items-center my-8">
-            <div class="text-4xl absolute ms-8 power" data-aos="fade-in" data-aos-duration="2000">
+            <div class="text-xl lg:text-2xl absolute ms-8 power" data-aos="fade-in" data-aos-duration="2000">
                 <p class="text-orange-600" data-aos="fade-in">A power connector that <br> easily attaches via magnets.
                 </p>
                 <p class="" data-aos="fade-in">With a colour-matched <br> woven cable. </p>
@@ -427,16 +435,18 @@
         <section class="trademarks flex flex-col items-center my-8 py-8">
             <div class="imac4k relative">
                 <img src="./ASSETS/png/034_display_hardware__cql9kavlt4ya_medium.png" alt="">
-                <video autoplay muted loop width="1016" height="571" class="absolute top-7 start-7">
+                <video autoplay muted loop
+                    class="absolute w-[95%] lg:w-[63.5rem] lg:h-[35.68rem] top-4  lg:top-7 start-4 lg:start-7">
                     <source
                         src="https://www.apple.com/105/media/us/imac/2023/4e499881-f23c-4108-bcce-5dff3399bebe/anim/display-hero/large_2x.mp4">
                 </video>
-                <h1 class="text-7xl absolute top-1/4 left-1/4 text-white">Brilliant 4.5k Display</h1>
+                <h1 class="text-4xl lg:text-7xl absolute top-1/4 left-1/4 text-white">Brilliant 4.5k Display</h1>
             </div>
-            <div class="imacDesc my-8 py-8 w-4/6">
+            <div class="imacDesc lg:my-8 py-8 px-8 lg:px-0 lg:w-4/6">
                 <h2 class="font-bold pt-8 mt-8 text-5xl text-cyan-900 p-0" data-aos="fade-in">See the big picture.</h2>
                 <h2 class="text-5xl font-bold" data-aos="fade-in">And all the details.</h2>
-                <p class="w-4/6  mt-8" data-aos="fade-in">With its expansive 60.96 cm (24″) Retina display, iMac offers
+                <p class="lg:w-4/6  mt-8" data-aos="fade-in">With its expansive 60.96 cm (24″) Retina display, iMac
+                    offers
                     a brilliant canvas
                     for multitasking, immersive movies and games, and so much more. The display’s 4.5K resolution
                     delivers ultra-clear detail and shines with 500 nits of brightness. That’s <b
@@ -449,7 +459,7 @@
         <!-- Specifications section -->
         <section class="specifications py-8">
             <div class="specificationsDiv py-8 my-8">
-                <h1 class="text-7xl font-bold flex gap-2">Best-in-class.
+                <h1 class="text-6xl lg:text-7xl my-3 font-bold flex items-center gap-2">Best-in-class.
                     <div class="inner-headings2"><span>
                             Camera. <br>
                             Mics. <br>
@@ -457,12 +467,12 @@
                             Period. <br>
                         </span></div>
                 </h1>
-                <h1 class="text-7xl font-bold">You’ll really stand out.</h1>
-                <div class="imacDesc my-8 py-8 ">
+                <h1 class="text-6xl lg:text-7xl font-bold">You’ll really stand out.</h1>
+                <div class="imacDesc lg:my-8 py-8 ">
                     <h2 class="font-bold pt-8 mt-8 text-5xl text-orange-400 p-0" data-aos="fade-in">1080p FaceTime HD
                         camera.</h2>
                     <h2 class="text-5xl font-bold" data-aos="fade-in">Ready for your close-up.</h2>
-                    <p class="w-[76%]  mt-8" data-aos="fade-in">It’s the best camera system ever in an iMac. With a
+                    <p class="lg:w-[76%]  mt-8" data-aos="fade-in">It’s the best camera system ever in an iMac. With a
                         built‑in image signal
                         processor, M3 boosts picture quality by analysing and enhancing each pixel at over a trillion
                         operations per second. This enables superior noise reduction, incredible dynamic range and more
@@ -473,7 +483,7 @@
                 </div>
                 <div class="specImg py-8 my-8 flex flex-col items-center relative" data-aos="fade-in">
                     <img src="./ASSETS/png/001_facetime_hw__ckl65spxnbqu_large.png" alt="">
-                    <img width="95%" class="absolute mt-7"
+                    <img width="95%" class="absolute mt-4 lg:mt-7"
                         src="./ASSETS/jpeg/225_facetime_screen__elpgmi8urpua_medium_2x.jpg" alt="">
                 </div>
 
@@ -481,7 +491,8 @@
                     <h2 class="font-bold pt-8 mt-8 text-5xl text-blue-900 p-0" data-aos="fade-in">Studio-quality mics.
                     </h2>
                     <h2 class="text-5xl font-bold" data-aos="fade-in">For high-quality conversations.</h2>
-                    <p class="w-[76%]  mt-8" data-aos="fade-in">Whether you’re on a video call, recording a podcast or
+                    <p class="lg:w-[76%]  mt-8" data-aos="fade-in">Whether you’re on a video call, recording a podcast
+                        or
                         livestreaming, the microphones on iMac make sure your voice comes through crisp and clear. The
                         studio‑quality three‑mic array is designed to reduce feedback, and beamforming technology helps
                         drastically reduce background noise — so everyone hears you, not what’s going on around you.
@@ -489,7 +500,7 @@
                 </div>
                 <div class="specImg py-8 my-8 flex flex-col items-center relative" data-aos="fade-in">
                     <img src="./ASSETS/png/015_audio_mics_hw__csn9aya5vyeu_large.png" alt="">
-                    <img width="95%" class="absolute mt-7"
+                    <img width="95%" class="absolute mt-4 lg:mt-7"
                         src="./ASSETS/jpeg/226_audio_mics_screen__c2otqdvoa78m_medium_2x.jpg" alt="">
                 </div>
                 <div class="imacDesc my-8 py-8 ">
@@ -503,29 +514,31 @@
                             src="https://www.apple.com/105/media/ww/imac/2023/4e499881-f23c-4108-bcce-5dff3399bebe/anim/speakers-room/large.mp4">
                     </video>
                 </div>
-                <div class="imacAudi flex justify-between gap-2 py-8">
-                    <p class="text-2xl  w-[50%]">iMac brings incredible, room‑filling audio to any space. Two pairs of
+                <div class="imacAudi flex  justify-between gap-4 lg:gap-2 py-8">
+                    <p class="lg:text-2xl  lg:w-[50%]">iMac brings incredible, room‑filling audio to any space. Two
+                        pairs of
                         force‑cancelling woofers create rich, deep bass — and each is balanced with a high‑performance
                         tweeter for a massive soundstage that takes music, movies and more to the next level. iMac also
                         supports Spatial Audio with Dolby Atmos. And when you combine that with a 4.5K Retina display,
                         it’s like bringing the whole theatre home.</p>
-                    <img src="./ASSETS/jpeg/062_speakers_internals__dmuc4qwjwei6_large.jpg" alt="">
+                    <img class="w-[50%] lg:w-auto" src="./ASSETS/jpeg/062_speakers_internals__dmuc4qwjwei6_large.jpg"
+                        alt="">
                 </div>
             </div>
             <!-- special audio -->
             <div class="specialAud relative py-8 pb-[12%] w-[100%]">
-                <div class="specImg py-8 my-8 flex flex-col items-center relative mt-[20%]">
-                    <img src="./ASSETS/png/026_spacialaudio_imac_hw__bu56j6uv29bm_large.png" alt="">
-                    <img width="73.5%" class="absolute mt-6"
+                <div class="specImg py-8 my-8 flex flex-col items-center relative lg:mt-[20%]">
+                    <img class="" src="./ASSETS/png/026_spacialaudio_imac_hw__bu56j6uv29bm_large.png" alt="">
+                    <img class="absolute mt-3 lg:mt-6 w-[95%] lg:w-[73.5%]"
                         src="./ASSETS/jpeg/256_spacialaudio_imac_screen__faau02zud8qe_medium_2x.jpg" alt="">
                 </div>
-                <img class="absolute top-0 start-0 px-[8%]" width="100%"
+                <img class="absolute top-0 start-0  lg:px-[8%]" width="100%"
                     src="./ASSETS/png/030_spacialaudio_waves__fay9lywcxya2_large.png" alt="">
             </div>
         </section>
         <!-- M3 Section -->
         <section class="m3 my-8 py-8">
-            <div class="m3div px-[20%]">
+            <div class="m3div px-[5%] lg:px-[20%]">
                 <div class="m3one my-8 py-8">
                     <div><img src="./ASSETS/jpeg/066_performance_mx__fudoftjes56q_large.jpg" alt=""></div>
                     <h1 class="text-7xl font-bold text-red-700 pt-8">M3 and macOS.</h1>
@@ -538,7 +551,7 @@
                         with the latest Intel Core i7 processor.3 And it stays cool and quiet, even while tackling
                         intense workloads. That’s the power of hardware, software and silicon — all designed together.
                     </p>
-                    <div class="upto flex gap-[10%] w-[65%] py-8">
+                    <div class="upto flex gap-[10%] lg:w-[65%] py-8">
                         <p class="w-[18%] text-base" style="color: grey; font-weight: 100;">Up to <br>
                             <span class="text-6xl text-red-700 font-extrabold py-2">2x</span><br>
                             faster than iMac with M1 <sup>4</sup>
@@ -556,40 +569,41 @@
             </div>
 
             <div class="m3imgsec my-8 py-8 mb-[5%] flex items-center relative">
-                <p class="text-3xl w-[37.5%] ps-[20%]" data-aos="fade-in"><b>The world’s fastest browser,<span
-                            class="text-red-700"> Safari
+                <p class="text-3xl w-[37.5%] ps-[5%] lg:ps-[20%]" data-aos="fade-in"><b>The world’s fastest
+                        browser,<span class="text-red-700"> Safari
                             runs up to 30% faster.<sup>7</sup></span> Create personalised profiles and securely share
                         your passwords and passkeys.</b></p>
                 <div class="m3img absolute">
                     <div class="relative">
                         <img width="100%" src="./ASSETS/png/021_performance_hardware__gll1j26v7pua_large.png" alt="">
-                        <img width="95%" class="absolute top-0 mt-7 ms-7"
+                        <img width="95%" class="absolute top-0 mt-5 lg:mt-7 ms-5 lg:ms-7"
                             src="./ASSETS/jpeg/024_performance_safari_screen__f2hmfihhf3mi_large.jpg" alt="">
                     </div>
                 </div>
             </div>
 
             <div class="m3imgsec my-8 py-8 mb-[5%] flex justify-end items-center relative">
-                <p class="text-3xl w-[37.5%] pe-[20%]" data-aos="fade-in"><b>M3 makes gaming an absolute blast with
+                <p class="text-3xl w-[37.5%] pe-[5%] lg:pe-[20%]" data-aos="fade-in"><b>M3 makes gaming an absolute
+                        blast with
                         <span class="text-red-700">up to 50% faster frame rates</span> and hardware-accelerated ray
                         tracing for more lifelike lighting and reflections.<sup>8</sup></b></p>
                 <div class="m3img1 absolute">
                     <div class="relative">
                         <img width="100%" src="./ASSETS/png/021_performance_hardware__gll1j26v7pua_large.png" alt="">
-                        <img width="95%" class="absolute top-0 mt-7 ms-7"
+                        <img width="95%" class="absolute top-0 mt-5 lg:mt-7 ms-5 lg:ms-7"
                             src="./ASSETS/jpeg/012_performance_gaming_screen__fr41vlhtjnee_large.jpg" alt="">
                     </div>
                 </div>
             </div>
 
             <div class="m3imgsec my-8 py-8 mb-[5%] flex items-center relative">
-                <p class="text-3xl w-[37.5%] ps-[20%]" data-aos="fade-in"><b>Fly through edits<span
+                <p class="text-3xl w-[37.5%] ps-[5%] lg:ps-[20%]" data-aos="fade-in"><b>Fly through edits<span
                             class="text-red-700"> up to two times faster in Adobe Photoshop.<sup>9</sup></span> And work
                         with massive 100‑megapixel images without a hitch.</b></p>
                 <div class="m3img absolute">
                     <div class="relative">
                         <img width="100%" src="./ASSETS/png/021_performance_hardware__gll1j26v7pua_large.png" alt="">
-                        <img width="95%" class="absolute top-0 mt-7 ms-7"
+                        <img width="95%" class="absolute top-0 mt-5 lg:mt-7 ms-4 lg:ms-7"
                             src="./ASSETS/jpeg/006_performance_lightroom_screen__ffd9hbl04ea2_large.jpg" alt="">
                     </div>
                 </div>
@@ -600,38 +614,41 @@
         <section class="apps">
             <div class="appsDiv">
                 <div class="row-1 relative">
-                    <img src="./ASSETS/png/010_apps_top_1__ex9jvxybnhm6_large.png" alt="">
-                    <img class="absolute top-0 start-0" src="./ASSETS/png/008_apps_top_2__gfbyc2ocle2q_large.png"
+                    <img id="apps-top1" class="w-[100%]" src="./ASSETS/png/010_apps_top_1__ex9jvxybnhm6_large.png"
                         alt="">
-                    <img class="absolute top-0 end-0" src="./ASSETS/png/009_apps_top_3__dy5dooarc1km_large.png" alt="">
+                    <img id="apps-top2" class="absolute top-0 start-0 w-[100%] lg:w-auto"
+                        src="./ASSETS/png/008_apps_top_2__gfbyc2ocle2q_large.png" alt="">
+                    <img id="apps-top3" class="absolute top-0 end-0 w-[100%] lg:w-auto"
+                        src="./ASSETS/png/009_apps_top_3__dy5dooarc1km_large.png" alt="">
                 </div>
                 <div class="text-wrapper text-center relative">
                     <h1 class="text-3xl absolute start-0 end-0 "><b>There are more apps for iMac than ever before.</b>
                     </h1>
                 </div>
                 <div class="row-2 relative my-8">
-                    <img src="./ASSETS/png/022_apps_middle_base__cwf2r0yp6cqe_large.png" alt="">
+                    <img id="apps-middle" src="./ASSETS/png/022_apps_middle_base__cwf2r0yp6cqe_large.png" alt="">
                 </div>
                 <div class="text-wrapper2 text-center relative">
-                    <h1 class="text-2xl absolute start-0 end-0 text-gray-500"><b>
+                    <h1 class="text-xl lg:text-2xl absolute start-0 mt-[-7rem] lg:mt-0 end-0 text-gray-500"><b>
                             iMac has apps for everything and everyone. You can run many of your favourite iPhone and
                             iPad apps directly on your iMac. And as always, it’s easy to search, discover and download
                             on the Mac App Store.
                         </b></h1>
                 </div>
                 <div class="row-3 relative">
-                    <img src="./ASSETS/png/011_apps_bottom_1__doob1p0g3gk2_large.png" alt="">
-                    <img class="absolute bottom-0 start-0" src="./ASSETS/png/013_apps_bottom_2__ddvs82ggppyu_large.png"
-                        alt="">
-                    <img class="absolute bottom-0 end-0" src="./ASSETS/png/004_apps_bottom_3__fxwuekyzsieu_large.png"
-                        alt="">
+                    <img id="apps-bottom1" class="w-[100%] lg:w-auto"
+                        src="./ASSETS/png/011_apps_bottom_1__doob1p0g3gk2_large.png" alt="">
+                    <img id="apps-bottom2" class="w-[100%] lg:w-auto absolute bottom-0 start-0"
+                        src="./ASSETS/png/013_apps_bottom_2__ddvs82ggppyu_large.png" alt="">
+                    <img id="apps-bottom3" class="w-[100%] lg:w-auto absolute bottom-0 end-0"
+                        src="./ASSETS/png/004_apps_bottom_3__fxwuekyzsieu_large.png" alt="">
                 </div>
             </div>
         </section>
         <!-- Iphone section -->
         <section class="iphone py-8 my-8">
             <div class="iPhoneDiv py-8 my-8">
-                <div class="iphonehead py-8 px-[20%] my-8 mb-[5%]">
+                <div class="iphonehead py-8 px-[5%] lg:px-[20%] my-8 mb-[5%]">
                     <h1 class="text-7xl text-yellow-600" data-aos="fade-in"><b>iMac + iPhone.</b></h1>
                     <h1 class="text-7xl " data-aos="fade-in"><b>Quite the pair.</b></h1>
                     <p class="text-2xl text-gray-500 w-[60%] pt-8" data-aos="fade-in"><b>iMac brings everything you love
@@ -639,8 +656,8 @@
                             iMac on the go. And when you use them together, they work like magic.</b></p>
                 </div>
 
-                <div class="m3imgsec my-8 py-8  my-[5%] flex justify-end items-center relative">
-                    <p class="text-4xl w-[37.5%] pe-[20%]" data-aos="fade-in"><b>Your <span
+                <div class="m3imgsec my-8  py-8  my-[5%] flex justify-end items-center relative">
+                    <p class="text-3xl lg:text-4xl w-[37.5%] lg:pe-[20%]" data-aos="fade-in"><b>Your <span
                                 class="text-yellow-500">calls and texts </span> come right to your iMac, so you don’t
                             need to switch
                             devices when you’re in the zone.</b></p>
@@ -653,7 +670,7 @@
                 </div>
 
                 <div class="m3imgsec my-8 py-8 mb-[5%] flex justify-start items-center relative">
-                    <p class="text-3xl w-[37.5%] ps-[20%]" data-aos="fade-in"><b>
+                    <p class="text-3xl w-[37.5%] ps-[5%] lg:ps-[20%]" data-aos="fade-in"><b>
                             <span class="text-yellow-500">Universal Clipboard</span> lets you copy text, images, photos
                             and more on your
                             iPhone, then paste to your iMac.</b></p>
@@ -666,7 +683,7 @@
                 </div>
 
                 <div class="m3imgsec my-8 py-8 mb-[5%] flex justify-end items-center relative">
-                    <p class="text-3xl w-[39%] pe-[20%]" data-aos="fade-in"><b>And you can <span
+                    <p class="text-3xl w-[39%] pe-[5%] lg:pe-[20%]" data-aos="fade-in"><b>And you can <span
                                 class="text-yellow-500"> use your iPhone to take a picture or scan a document </span>
                             and have it automatically appear on your iMac.</b><br>
                         <a href="" class="text-2xl text-sky-600 hover:underline hover:decoration-solid">Learn more about
@@ -682,7 +699,7 @@
         </section>
         <!-- new to mac section -->
         <section class="new">
-            <div class="newHead flex justify-between items-center ps-[20%] py-8 my-8">
+            <div class="newHead flex justify-around lg:justify-between items-center ps-[5%] lg:ps-[20%] py-8 my-8">
                 <h1 class="text-7xl font-bold"> New to Mac? </h1>
                 <div class="buttons text-2xl flex gap-2 items-center">
                     <div
@@ -693,8 +710,8 @@
                                 > </div>
                     </div>
                 </div>
-                <div class="newCards overflow-hidden relative flex gap-8 my-8 py-8 ms-[20%]">
-                    <div class="card1 absolute top-0 w-1/3 ms-0">
+                <div class="newCards overflow-hidden relative flex gap-8 my-8 py-8 ms-[5%] lg:ms-[20%]">
+                    <div class="card1 absolute top-0 w-1/2 lg:w-1/3 ms-0">
                         <img src="./ASSETS/jpeg/011_switchers_mac_iphone__baxmq653kvdu_large.jpg" alt="">
                         <p class="text-2xl text-gray-500 p-4">
                             <span class="text-black">As familiar as iPhone.</span>
@@ -705,7 +722,7 @@
                         </p>
                     </div>
 
-                    <div class="card1 absolute top-0 ms-[30rem] w-1/3">
+                    <div class="card1 absolute top-0 ms-[30rem] w-1/2 lg:w-1/3">
                         <img src="./ASSETS/jpeg/076_switchers_icloud__feeiwy33kjee_large.jpg" alt="">
                         <p class="text-2xl text-gray-500 p-4">
                             <span class="text-black">Access files anywhere with iCloud.</span>
@@ -716,7 +733,7 @@
                         </p>
                     </div>
 
-                    <div class="card1 absolute top-0 ms-[60rem] w-1/3">
+                    <div class="card1 absolute top-0 ms-[60rem] w-1/2 lg:w-1/3">
                         <img src="./ASSETS/jpeg/075_switchers_migration__b56j1v8qw6c2_large.jpg" alt="">
                         <p class="text-2xl text-gray-500 p-4">
                             <span class="text-black">Switch over with Migration Assistant.</span>
@@ -726,7 +743,7 @@
                         </p>
                     </div>
 
-                    <div class="card1 absolute top-0 ms-[90rem] w-1/3">
+                    <div class="card1 absolute top-0 ms-[90rem] w-1/2 lg:w-1/3">
                         <img src="./ASSETS/jpeg/077_switchers_powerful_apps__bmvtiwjdd7si_large.jpg" alt="">
                         <p class="text-2xl text-gray-500 p-4">
                             <span class="text-black">Powerful apps built in.</span>
@@ -736,54 +753,63 @@
                         </p>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- Keyboard section -->
         <section class="keyboard overflow-hidden">
             <div class="accheroImg relative flex flex-col items-center mb-8">
-                <img src="./ASSETS/png/017_accessories_hero_imac_hw__cpvb2y3r05ua_large.png" alt="">
-                <img class="absolute top-7" src="./ASSETS/jpeg/046_accessories_hero_imac_screen__qio12zby8ea2_large.jpg" alt="">
+                <img class="w-[70%] lg:w-auto" src="./ASSETS/png/017_accessories_hero_imac_hw__cpvb2y3r05ua_large.png" alt="">
+                <img class="absolute top-4 lg:top-7 w-[66%] lg:w-auto" src="./ASSETS/jpeg/046_accessories_hero_imac_screen__qio12zby8ea2_large.jpg"
+                    alt="">
                 <div class="accImg flex py-1">
-                    <img src="./ASSETS/png/027_accessories_hero_trackpad__etf7mml3mgmu_large.png" alt="">
-                    <img src="./ASSETS/png/003_accessories_hero_keyboard__f94j4hmk8suq_large.png" alt="">
-                    <img src="./ASSETS/png/014_accessories_hero_mouse__ehe5s3y6gyoi_large.png" alt="">
+                    <img class="w-[20%] lg:w-auto" src="./ASSETS/png/027_accessories_hero_trackpad__etf7mml3mgmu_large.png" alt="">
+                    <img class="w-[60%] lg:w-auto" src="./ASSETS/png/003_accessories_hero_keyboard__f94j4hmk8suq_large.png" alt="">
+                    <img class="w-[20%] lg:w-auto" src="./ASSETS/png/014_accessories_hero_mouse__ehe5s3y6gyoi_large.png" alt="">
                 </div>
             </div>
-            <div class="imacDesc my-8 py-8 px-[20%]">
+            <div class="imacDesc my-8 py-8 px-[5%] lg:px-[20%]">
                 <h2 class="text-5xl pt-8 mt-8 font-bold" data-aos="fade-in"><b>Keep the colour going</b> </h2>
-                <h2 class="font-bold text-5xl text-cyan-900 p-0" data-aos="fade-in"><b>all the way to your fingertips.</b></h2>
-                <p class="w-[76%]  mt-8" data-aos="fade-in">iMac features a colour-matched keyboard, mouse and trackpad. Magic Keyboard with Touch ID lets you easily and securely unlock your iMac, switch users and download apps.<sup>10</sup> And Magic Mouse and Magic Trackpad make navigation comfortable and intuitive.
+                <h2 class="font-bold text-5xl text-cyan-900 p-0" data-aos="fade-in"><b>all the way to your
+                        fingertips.</b></h2>
+                <p class="w-[76%]  mt-8" data-aos="fade-in">iMac features a colour-matched keyboard, mouse and trackpad.
+                    Magic Keyboard with Touch ID lets you easily and securely unlock your iMac, switch users and
+                    download apps.<sup>10</sup> And Magic Mouse and Magic Trackpad make navigation comfortable and
+                    intuitive.
                 </p>
             </div>
-            <div class="magic px-[20%] py-8">
+            <div class="magic px-[5%] lg:px-[20%] py-8">
                 <h1 class="text-4xl mb-0 pb-0"><b>Like we said.</b></h1>
-                <h1 class="text-[18rem] mt-0 pt-0 text-cyan-900"><b>Magic</b>.</h1>
+                <h1 class="text-[10rem] lg:text-[18rem] mt-0 pt-0 text-cyan-900"><b>Magic</b>.</h1>
             </div>
             <div class="keyboardpic flex justify-center gap-5 py-8 ">
-                <img src="./ASSETS/jpeg/070_accessories_trackpad__gg8c3plfqouy_large.jpg" alt="">
+                <img class="ms-[-50%] lg:ms-0" src="./ASSETS/jpeg/070_accessories_trackpad__gg8c3plfqouy_large.jpg" alt="">
                 <div class="keypicdiv relative flex">
                     <img src="./ASSETS/png/002_accessories_keyboard__e1n39q3h7ngy_large.png" alt="">
                     <img src="./ASSETS/jpeg/030_accessories_mouse__d3d3v1ap1taq_large.jpg" alt="">
-                    <img class="absolute top-0 right-0 mt-[-2rem] me-[-1rem]" src="./ASSETS/png/028_accessories_hand__0iajmtwiuoie_large.png" alt="">
+                    <img class="absolute top-0 right-0 mt-[-2rem] me-[-1rem]"
+                        src="./ASSETS/png/028_accessories_hand__0iajmtwiuoie_large.png" alt="">
                 </div>
             </div>
         </section>
         <!-- Additional section -->
-        <section class="additional my-8">
-            <div class="seeitinyourspace py-8 my-8 mx-[6%] flex flex-col items-center">
+        <section class="additional my-8">Ṁ
+            <div class="seeitinyourspace py-8 my-8 mx-[3%] lg:mx-[6%] flex flex-col items-center">
                 <img class="w-[50px] pt-8" src="./ASSETS/png/012_ar_icon__ba7cikgtbwf6_large.png" alt="">
                 <h1 class="text-7xl">See it in your space.</h1>
                 <p class="text-xl py-8 my-8">To view iMac in AR, visit this page in Safari on your iPhone or iPad.</p>
                 <div class="relative w-full mt-8 flex justify-center">
                     <img class=" " src="./ASSETS/jpeg/023_ar_router_screen_green__eka4ra990b42_large.jpg" alt="">
-                    <img class="absolute top-0 start-0 end-0" src="./ASSETS/png/019_ar_router_hw__egigurnc65iu_large.png" alt="">
+                    <img class="absolute top-0 start-0 end-0"
+                        src="./ASSETS/png/019_ar_router_hw__egigurnc65iu_large.png" alt="">
                 </div>
             </div>
-            <div class="wdirfy py-8 mt-4 mx-[6%]">
+            <div class="wdirfy py-8 mt-4 mx-[3%] lg:mx-[6%]">
                 <div class="whead text-center py-8 my-8">
                     <h1 class="text-5xl mb-8"><b>Which desktop is right for you?</b></h1>
-                    <a href="" class="text-2xl text-sky-600 hover:underline hover:decoration-solid">Compare all Mac models ></a>
+                    <a href="" class="text-2xl text-sky-600 hover:underline hover:decoration-solid">Compare all Mac
+                        models ></a>
                 </div>
-                <div class="wcards flex justify-evenly px-[10%]">
+                <div class="wcards flex justify-evenly px-[3%] lg:px-[10%]">
                     <div class="wcard">
                         <img class="py-4 my-4" src="./ASSETS/png/032_compare_imac__f7hnie54ekii_large.png" alt="">
                         <h2 class="text-2xl">iMac</h2>
@@ -810,7 +836,8 @@
                             <li class="py-2">256GB to 8TB storage<sup>11</sup></li>
                         </ul>
                         <a id="white" class="rounded-full bg-blue-700 white px-2.5 py-0.5">Buy</a><br>
-                        <a href="" class="text-lg text-sky-600 hover:underline hover:decoration-solid pt-3" >Learn more ></a>
+                        <a href="" class="text-lg text-sky-600 hover:underline hover:decoration-solid pt-3">Learn more
+                            ></a>
                     </div>
                     <div class="wcard">
                         <img class="py-4 my-4" src="./ASSETS/png/029_compare_macstudio__detym2irhvma_large.png" alt="">
@@ -824,11 +851,12 @@
                             <li class="py-2">512GB to 8TB storage<sup>11</sup></li>
                         </ul>
                         <a id="white" class="rounded-full bg-blue-700 white px-2.5 py-0.5">Buy</a><br>
-                        <a href="" class="text-lg text-sky-600 hover:underline hover:decoration-solid flex pt-3" >Learn more ></a>
+                        <a href="" class="text-lg text-sky-600 hover:underline hover:decoration-solid flex pt-3">Learn
+                            more ></a>
                     </div>
                 </div>
             </div>
-            <div class="worknedu mx-[6%] gap-4 mt-4">
+            <div class="worknedu mx-[3%] lg:mx-[6%] gap-4 mt-4">
                 <div class="work flex flex-col justify-center text-white text-center">
                     <h1 class="text-5xl font-bold">Apple at Work</h1>
                     <h2 class="text-xl pt-4 pb-4">Get the power to take your business to the next level.</h2>
@@ -837,21 +865,26 @@
                 </div>
                 <div class="education flex flex-col justify-center text-white text-center">
                     <h1 class="text-5xl font-bold">Apple and Education</h1>
-                    <h2 class="text-xl pt-4 pb-4">Empowering educators and students to move <br> the  world forward.</h2>
-                    <a href="" class="text-xl hover:underline">  Learn about Apple and Education  ></a>
+                    <h2 class="text-xl pt-4 pb-4">Empowering educators and students to move <br> the world forward.</h2>
+                    <a href="" class="text-xl hover:underline"> Learn about Apple and Education ></a>
                 </div>
             </div>
-            <div class="accessories mx-[6%] text-center py-[8%] mt-4">
+            <div class="accessories mx-[3%] lg:mx-[6%] text-center py-[8%] mt-4">
                 <h2 class="text-2xl">Accessories</h2>
                 <h1 class="text-5xl font-bold mb-4">Explore Mac accessories.</h1>
                 <a id="white" class="rounded-full bg-blue-700 white px-4 py-2 ">Shop</a>
             </div>
-            <div id="environment" class="environment mx-[6%] py-[8%] flex mt-4 overflow-hidden">
-                <img class="ms-[-10%]" src="./ASSETS/png/018_environment__em2kqpmluqmq_large.png" alt="">
+            <div id="environment" class="environment mx-[3%] lg:mx-[6%] py-[8%] flex flex-col-reverse lg:flex-row items-center mt-4 overflow-hidden">
+                <img id="env" class="lg:ms-[-10%] w-[60%] lg:w-auto" src="./ASSETS/png/018_environment__em2kqpmluqmq_large.png" alt="">
                 <div class="envirdesc px-[5%] py-4 w-[70%]">
-                    <h1 class="text-5xl">Designed with <br> the earth in mind.</h1>
-                    <p class="w-[80%] py-8  text-2xl">iMac was designed to minimise its impact on the environment. All of the virgin wood fibre in its packaging comes exclusively from responsibly managed forests. Its stand is made from 100% recycled aluminium. The rare earth elements in the speakers, fan motor and power connector magnets are completely recycled. And we’re committed to transitioning our entire manufacturing supply chain to 100% renewable electricity by 2030. </p>
-                    <a href="" class="text-2xl text-sky-600 hover:underline hover:decoration-solid">Learn more about Apple and the environment ></a>
+                    <h1 class="text-2xl lg:text-5xl">Designed with <br> the earth in mind.</h1>
+                    <p class="w-[80%] py-8  lg:text-2xl">iMac was designed to minimise its impact on the environment. All
+                        of the virgin wood fibre in its packaging comes exclusively from responsibly managed forests.
+                        Its stand is made from 100% recycled aluminium. The rare earth elements in the speakers, fan
+                        motor and power connector magnets are completely recycled. And we’re committed to transitioning
+                        our entire manufacturing supply chain to 100% renewable electricity by 2030. </p>
+                    <a href="" class="lg:text-2xl text-sky-600 hover:underline hover:decoration-solid">Learn more about
+                        Apple and the environment ></a>
                 </div>
             </div>
         </section>
@@ -867,13 +900,14 @@
                 <div class="footcard text-center">
                     <img class="text-gray-500" width="50" src="./ASSETS/svg/01_icon_large.svg" alt="">
                     <h2>Free delivery and pickup</h2>
-                    <p class="text-base text-black-200 w-[70%] pb-4">Get free delivery and pickup at your Apple store</p>
+                    <p class="text-base text-black-200 w-[70%] pb-4">Get free delivery and pickup at your Apple store
+                    </p>
                     <a href="" class="text-sky-600 hover:underline hover:decoration-solid">Learn more ></a>
                 </div>
                 <div class="footcard text-center">
                     <img class="text-gray-500" width="50" src="./ASSETS/svg/02_icon_large.svg" alt="">
                     <h2>Get help buying</h2>
-                    <p class="text-base text-black-200 w-[70%] pb-4">Have a question ? Call a specialist or chat online. 
+                    <p class="text-base text-black-200 w-[70%] pb-4">Have a question ? Call a specialist or chat online.
                         <br> Call 000800 040 1966
                     </p>
                     <a href="" class="text-sky-600 hover:underline hover:decoration-solid">Contact us ></a>
@@ -885,27 +919,62 @@
                 <ol class="list-decimal px-4 text-sm">
                     <li>Actual diagonal screen size is 59.69 cm (23.5″).</li>
                     <li>Wi‑Fi 6E is available in countries and regions where supported.</li>
-                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems with Apple M3, 8-core CPU, 10-core GPU, 16GB of RAM and 512GB SSD; as well as production Intel Core i7–based PC systems with Intel Iris Xe Graphics, 16GB of RAM, 512GB SSD and the latest version of Windows 11 Home available at the time of testing. Best-selling 24″ Windows all-in-one PC with the latest Intel i7 processor is based on publicly available sales data over the prior
-                        12 months. Tested with Affinity Photo 2 v2.2.0 using the built-in benchmark version 21000. Performance tests are conducted using specific computer systems
+                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems
+                        with Apple M3, 8-core CPU, 10-core GPU, 16GB of RAM and 512GB SSD; as well as production Intel
+                        Core i7–based PC systems with Intel Iris Xe Graphics, 16GB of RAM, 512GB SSD and the latest
+                        version of Windows 11 Home available at the time of testing. Best-selling 24″ Windows all-in-one
+                        PC with the latest Intel i7 processor is based on publicly available sales data over the prior
+                        12 months. Tested with Affinity Photo 2 v2.2.0 using the built-in benchmark version 21000.
+                        Performance tests are conducted using specific computer systems
                         and reflect the approximate performance of iMac.</li>
-                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems with Apple M3, 8-core CPU, 10-core GPU, 24GB of RAM and 2TB SSD; as well as production 24″ iMac systems with Apple M1, 8-core CPU, 8-core GPU, 16GB of RAM and 2TB SSD. Adobe Premiere Pro (Beta) 24.1 tested with Scene Edit Detection using a 2-minute and 19-second project with Apple ProRes 422 HQ media, at 1920x1080 resolution and 23.98 frames per second. Performance tests are conducted using specific computer systems and reflect the approximate performance of iMac.</li>
-                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems with Apple M3, 8-core CPU, 10-core GPU, 8GB of RAM and 256GB SSD; as well as production 3.3GHz 6-core Intel Core i5–based 27″ iMac systems with Radeon Pro 5300 with 4GB of GDDR6 memory, 8GB of RAM and
-                        512GB SSD. Blender 4.0 Beta tested by rendering a 47.1 MB blend file 3D scene utilising software-based ray tracing. Performance tests are conducted using specific computer systems and reflect the approximate performance of iMac.</li>
-                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems with Apple M3, 8-core CPU and 10-core GPU; as well as production 3.0GHz 6-core Intel Core i5–based 21.5″ iMac systems with Radeon Pro 560X with 4GB of GDDR5 memory, all configured with 8GB of RAM and
-                        256GB SSD. Tested using Super Resolution with Photomator 3.1.2 and a 4.4MB image. Performance tests are conducted using specific computer systems
+                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems
+                        with Apple M3, 8-core CPU, 10-core GPU, 24GB of RAM and 2TB SSD; as well as production 24″ iMac
+                        systems with Apple M1, 8-core CPU, 8-core GPU, 16GB of RAM and 2TB SSD. Adobe Premiere Pro
+                        (Beta) 24.1 tested with Scene Edit Detection using a 2-minute and 19-second project with Apple
+                        ProRes 422 HQ media, at 1920x1080 resolution and 23.98 frames per second. Performance tests are
+                        conducted using specific computer systems and reflect the approximate performance of iMac.</li>
+                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems
+                        with Apple M3, 8-core CPU, 10-core GPU, 8GB of RAM and 256GB SSD; as well as production 3.3GHz
+                        6-core Intel Core i5–based 27″ iMac systems with Radeon Pro 5300 with 4GB of GDDR6 memory, 8GB
+                        of RAM and
+                        512GB SSD. Blender 4.0 Beta tested by rendering a 47.1 MB blend file 3D scene utilising
+                        software-based ray tracing. Performance tests are conducted using specific computer systems and
+                        reflect the approximate performance of iMac.</li>
+                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems
+                        with Apple M3, 8-core CPU and 10-core GPU; as well as production 3.0GHz 6-core Intel Core
+                        i5–based 21.5″ iMac systems with Radeon Pro 560X with 4GB of GDDR5 memory, all configured with
+                        8GB of RAM and
+                        256GB SSD. Tested using Super Resolution with Photomator 3.1.2 and a 4.4MB image. Performance
+                        tests are conducted using specific computer systems
                         and reflect the approximate performance of iMac.</li>
-                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems with Apple M3, 8-core CPU, 10-core GPU, 24GB of RAM and 2TB SSD; as well as production 24″ iMac systems with Apple M1, 8-core CPU, 8-core GPU, 16GB of RAM and 2TB SSD, using JetStream 2.1 and Speedometer 2.1 performance benchmarks. Devices tested with a wired network connection on pre-release Safari 17.1. Performance will vary based on usage, system configuration, network connection and other factors.</li>
-                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems with Apple M3, 8-core CPU, 10-core GPU, 24GB of RAM and 2TB SSD; as well as production 24″ iMac systems with Apple M1, 8-core CPU, 8-core GPU, 16GB of RAM and 2TB SSD. No Man’s Sky Build ID 12225570 save game load and FPS performance tested at 2560x1440 resolution in Ultra Quality with FPS limit set to 240. Performance tests are conducted using specific computer systems and reflect the approximate performance of iMac.</li>
-                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems with Apple M3, 8-core CPU, 10-core GPU, 24GB of RAM and
-                        2TB SSD; as well as production 24″ iMac systems with Apple M1, 8-core CPU, 8-core GPU, 16GB of RAM and 2TB SSD. Adobe Photoshop 2024 25.0.0 tested using the following filters: sharpen, find edges, blur more, diffuse and sharpen more. Performance tests are conducted using specific computer systems and reflect the approximate performance of iMac.</li>
-                    <li>Magic Keyboard with Touch ID is included with iMac systems with 10-core GPU and is available as an option on systems with 8-core GPU.</li>
+                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems
+                        with Apple M3, 8-core CPU, 10-core GPU, 24GB of RAM and 2TB SSD; as well as production 24″ iMac
+                        systems with Apple M1, 8-core CPU, 8-core GPU, 16GB of RAM and 2TB SSD, using JetStream 2.1 and
+                        Speedometer 2.1 performance benchmarks. Devices tested with a wired network connection on
+                        pre-release Safari 17.1. Performance will vary based on usage, system configuration, network
+                        connection and other factors.</li>
+                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems
+                        with Apple M3, 8-core CPU, 10-core GPU, 24GB of RAM and 2TB SSD; as well as production 24″ iMac
+                        systems with Apple M1, 8-core CPU, 8-core GPU, 16GB of RAM and 2TB SSD. No Man’s Sky Build ID
+                        12225570 save game load and FPS performance tested at 2560x1440 resolution in Ultra Quality with
+                        FPS limit set to 240. Performance tests are conducted using specific computer systems and
+                        reflect the approximate performance of iMac.</li>
+                    <li>Testing conducted by Apple in September and October 2023 using pre-production 24″ iMac systems
+                        with Apple M3, 8-core CPU, 10-core GPU, 24GB of RAM and
+                        2TB SSD; as well as production 24″ iMac systems with Apple M1, 8-core CPU, 8-core GPU, 16GB of
+                        RAM and 2TB SSD. Adobe Photoshop 2024 25.0.0 tested using the following filters: sharpen, find
+                        edges, blur more, diffuse and sharpen more. Performance tests are conducted using specific
+                        computer systems and reflect the approximate performance of iMac.</li>
+                    <li>Magic Keyboard with Touch ID is included with iMac systems with 10-core GPU and is available as
+                        an option on systems with 8-core GPU.</li>
                     <li>1GB = 1 billion bytes and 1TB = 1 trillion bytes; actual formatted capacity is less.</li>
                 </ol>
                 <p>“Lunch” written by Jeff Melvin, MELVV, Maude Latour.</p>
             </div>
             <hr>
             <div class="linksDiv py-4 text-sm text-gray-700">
-                <div class="linkshead flex gap-2 pb-4"><img  width="15" src="./ASSETS/svg/03_icon_large.svg" alt=""> > Mac > iMac</div>
+                <div class="linkshead flex gap-2 pb-4"><img width="15" src="./ASSETS/svg/03_icon_large.svg" alt=""> >
+                    Mac > iMac</div>
                 <div class="links flex justify-evenly text-sm">
                     <div class="linkf">
                         <div class="link1">
@@ -1018,7 +1087,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="linksfoot">More ways to shop: <a href="">Find an Apple Store</a> or <a href="">other retailer</a> near you. Or call 000800 040 1966.</div>
+                <div class="linksfoot">More ways to shop: <a href="">Find an Apple Store</a> or <a href="">other
+                        retailer</a> near you. Or call 000800 040 1966.</div>
             </div>
             <hr>
             <div class="flex text-sm justify-between py-2 text-gray-500">

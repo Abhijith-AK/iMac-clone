@@ -39,8 +39,12 @@ header {
   padding: 0 20%; /* Adjust padding for better responsiveness */
 }
 
+.bar{
+  display: none;
+}
+
 .hover-div{
-  z-index: 2;
+  z-index: 4;
   backdrop-filter: blur(1px);
   background-color: #fbfbfbd8;
   padding-bottom: 100vh;
@@ -49,7 +53,6 @@ header {
 
 
 .head2-wrapper{
-  position: sticky !important ;
   z-index: 1000; 
   background-color: #fbfbfb;
   backdrop-filter: blur(20px);
@@ -552,3 +555,4 @@ footer{
 .links ul{
   margin-bottom: .8rem;
 }
+
