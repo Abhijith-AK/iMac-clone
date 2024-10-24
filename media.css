@@ -128,4 +128,21 @@
     overflow: visible;
   }
 
+  .m3imgsec3{
+    height: 30rem;
+    overflow: hidden;
+  }
+
+  .newCards{
+    height: 50vh;
+  }
+
+  .worknedu{
+    display: block;
+  }
+
+  .footcard{
+    width: 40%;
+  }
+
 }
