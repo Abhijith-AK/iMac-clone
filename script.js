@@ -145,6 +145,13 @@ const small = (sm) => {
     heroImg.src = "./ASSETS/jpeg/036_hero_endframe__fpycn08d62ai_small.jpg";
     sideStand.src = "./ASSETS/jpeg/037_color_side_green__bjxhwofb06b6_small.jpg";
     designStand.src = "./ASSETS/jpeg/221_design_stand__fkr0lztq4amy_small.jpg";
+    appsTop1.src = "./ASSETS/png/057_apps_top_1__ex9jvxybnhm6_small.png";
+    appsTop2.src = "./ASSETS/png/048_apps_top_2__gfbyc2ocle2q_small.png";
+    appsTop3.src = "./ASSETS/png/075_apps_top_3__dy5dooarc1km_small.png";
+    appsMiddle.src = "./ASSETS/png/090_apps_middle_base__cwf2r0yp6cqe_small.png";
+    appsBottom1.src = "./ASSETS/png/069_apps_bottom_1__doob1p0g3gk2_small.png";
+    appsBottom2.src = "./ASSETS/png/131_apps_bottom_2__ddvs82ggppyu_small.png";
+    appsBottom3.src = "./ASSETS/png/151_apps_bottom_3__fxwuekyzsieu_small.png";
   }
 }
 
