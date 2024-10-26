@@ -159,7 +159,7 @@ const small = (sm) => {
     appsBottom1.src = "./ASSETS/png/069_apps_bottom_1__doob1p0g3gk2_small.png";
     appsBottom2.src = "./ASSETS/png/131_apps_bottom_2__ddvs82ggppyu_small.png";
     appsBottom3.src = "./ASSETS/png/151_apps_bottom_3__fxwuekyzsieu_small.png";
-    desc.style.marginTop = hero.offsetHeight + heroImg.offsetHeight + 'px';
+    // desc.style.marginTop = hero.offsetHeight + heroImg.offsetHeight + 'px';
   }
 }
 
