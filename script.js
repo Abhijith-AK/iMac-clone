@@ -21,8 +21,9 @@ const appsBottom2 = document.getElementById("apps-bottom2");
 const appsBottom3 = document.getElementById("apps-bottom3");
 const env = document.getElementById("env");
 
-
-desc.style.marginTop =hero.offsetHeight + 'px';
+if (sm.matches) {
+desc.style.marginTop = hero.offsetHeight + heroImg.offsetHeight + 'px';
+}
 
 AOS.init();
 // init controller
