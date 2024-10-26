@@ -17,7 +17,7 @@
     <!-- Container -->
     <div class="c">
         <!-- Header -->
-        <header class=" inset-x-0 border-2 border-b-black-100">
+        <header class=" inset-x-0 ">
             <!-- Header first section -->
             <div class="head1 relative">
                 <a id="apple" class="aShow" href=""><img src="./ASSETS/svg/03_icon_large.svg" alt=""></a>
@@ -289,35 +289,35 @@
                 </div>
             </div>
             <!-- Header Second section -->
-            <div class="head2-wrapper">
-                <div class="head2 py-2 flex justify-between items-center">
-                    <div class="title text-xl px-[5%] lg:px-0">iMac</div>
-                    <div class="head2-links justify-end flex lg:justify-around w-1/2 text-sm font-thin white">
-                        <a class="aHide">Overview</a>
-                        <a class="aHide">Tech Specs</a>
-                        <a class="aHide">Compare</a>
-                        <a class="aHide">Switch from PC to Mac</a>
-                        <img class="bar px-[2%] w-8 lg:px-0"
-                            src="./ASSETS/svg/11_1cf3a4a5-b726-4fbe-b8ba-11f4c205e27d.svg" alt="">
-                        <a id="white" class="rounded-full bg-blue-700 white px-2.5 py-0.5">Buy</a>
-                    </div>
+        </header>
+        <div class="head2-wrapper sticky border-b-2 border-b-black-100">
+            <div class="head2 py-2 flex justify-between items-center">
+                <div class="title text-xl px-[5%] lg:px-0">iMac</div>
+                <div class="head2-links justify-end flex lg:justify-around w-1/2 text-sm font-thin white">
+                    <a class="aHide">Overview</a>
+                    <a class="aHide">Tech Specs</a>
+                    <a class="aHide">Compare</a>
+                    <a class="aHide">Switch from PC to Mac</a>
+                    <img class="bar px-[2%] w-8 lg:px-0"
+                        src="./ASSETS/svg/11_1cf3a4a5-b726-4fbe-b8ba-11f4c205e27d.svg" alt="">
+                    <a id="white" class="rounded-full bg-blue-700 white px-2.5 py-0.5">Buy</a>
                 </div>
             </div>
-        </header>
+        </div>
         <!-- Hero section -->
-        <section class="hero relative lg:bg-black text-white lg:min-h-screen flex items-center justify-center">
+        <section  id="hero"  class="hero absolute inset-x-0 mt-[-5rem] lg:bg-black text-white lg:min-h-screen flex items-center justify-center">
             <div class="w-full max-w-7xl mx-auto px-4">
-                <video class="hero-video w-full h-full object-cover absolute top-1 py-2 left-0 hidden lg:block" autoplay
+                <video class="hero-video w-full h-full mt-[5rem]  object-cover absolute left-0 hidden lg:block" autoplay
                     muted playsinline>
                     <source src="./ASSETS/imac_hero (online-video-cutter.com).mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <img id="hero" class="hero-img lg:absolute left-0 w-full lg:h-full object-cover lg:top-0 py-2 block lg:hidden"
+                <img id="heroImg" class="hero-img lg:absolute left-0 w-full lg:h-full object-cover lg:top-0  block lg:hidden"
                     src="./ASSETS/jpeg/107_hero_endframe__fpycn08d62ai_large_2x.jpg" alt="">
             </div>
         </section>
         <!-- Desc section -->
-        <section class="desc flex justify-center py-8">
+        <section id="desc" class="desc flex justify-center py-8">
             <div class="descdiv md:py-8 lg:text-center">
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold py-5" data-aos="fade-in" data-aos-duration="300">Packed with
                     more juice.
@@ -436,7 +436,7 @@
             <div class="imac4k relative">
                 <img src="./ASSETS/png/034_display_hardware__cql9kavlt4ya_medium.png" alt="">
                 <video autoplay muted loop
-                    class="absolute w-[95%] lg:w-[63.5rem] lg:h-[35.68rem] top-2 md:top-4 lg:top-7 start-2 md:start-4 lg:start-7">
+                    class="absolute w-[95%] xl:w-[63.5rem] xl:h-[35.68rem] top-2 md:top-4 lg:top-7 start-2 md:start-4 lg:start-7">
                     <source
                         src="https://www.apple.com/105/media/us/imac/2023/4e499881-f23c-4108-bcce-5dff3399bebe/anim/display-hero/large_2x.mp4">
                 </video>

@@ -19,12 +19,8 @@ c{
 }
 
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   background-color: #fbfbfb;
-  backdrop-filter: blur(20px);
   z-index: 1000; 
 }
 
@@ -34,7 +30,7 @@ header {
   justify-content: space-between;
   color: #bbbb;
   align-items: center;
-  z-index: 3;
+  z-index: 1000;
   position: relative;
   padding: 0 20%; /* Adjust padding for better responsiveness */
 }
@@ -44,8 +40,8 @@ header {
 }
 
 .hover-div{
-  z-index: 4;
-  backdrop-filter: blur(1px);
+  z-index: 100;
+  backdrop-filter: blur(20px);
   background-color: #fbfbfbd8;
   padding-bottom: 100vh;
   display: none;
@@ -53,14 +49,17 @@ header {
 
 
 .head2-wrapper{
-  z-index: 1000; 
+  z-index: 100;
   background-color: #fbfbfb;
   backdrop-filter: blur(20px);
-  
+  position: sticky;
+  top: 0;
 }
 
 .head2 {
   padding: 0.5% 20%; 
+  z-index: 99;
+  position: relative;
 }
 
 .head2-links a {
@@ -73,29 +72,14 @@ header {
   color: white;
 }
 
-.hero-img{
-  display: none;
-  top: 0;
-  z-index: 1;
-}
-
-.hero-img{
-  margin-top: -80px;
-}
-
 .hero-video,
 .hero-img {
   position: absolute;
   top: 0;
-  margin-top: 0.6rem;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   object-fit: cover;
   z-index: 1; /* Make sure this is lower than the header */
-}
-
-.hero-video{
-  margin-top: 5rem;
 }
 
 .hoverBox{
@@ -129,13 +113,8 @@ header {
   display: flex;
 }
 
-.desc{
-  height: 100vh;
-}
-
 .descdiv{
   max-width: 50%;
-  margin-top: 3rem;
 }
 
 .fixed {

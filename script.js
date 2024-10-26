@@ -1,10 +1,13 @@
 const video = document.querySelector('.hero-video');
 const image = document.querySelector('.hero-img');
 
+const hero = document.getElementById('hero');
+const desc = document.getElementById('desc');
+
 const links = document.querySelectorAll('.head1 a');
 const hoverDiv = document.querySelector('.hover-div');
 const hoverBoxes = document.querySelectorAll('.hoverBox');
-const heroImg = document.getElementById("hero");
+const heroImg = document.getElementById("heroImg");
 const standImg = document.getElementById("standImg");
 const sideStand = document.getElementById("sideStand");
 const designStand = document.getElementById("designStand")
@@ -17,6 +20,9 @@ const appsBottom1 = document.getElementById("apps-bottom1");
 const appsBottom2 = document.getElementById("apps-bottom2");
 const appsBottom3 = document.getElementById("apps-bottom3");
 const env = document.getElementById("env");
+
+
+desc.style.marginTop =hero.offsetHeight + 'px';
 
 AOS.init();
 // init controller
@@ -137,6 +143,7 @@ const medium = (md) => {
     appsBottom2.src = "./ASSETS/png/130_apps_bottom_2__ddvs82ggppyu_medium.png";
     appsBottom3.src = "./ASSETS/png/115_apps_bottom_3__fxwuekyzsieu_medium.png";
     env.src = "./ASSETS/png/189_environment__em2kqpmluqmq_medium.png";
+
   }
 }
 
@@ -152,6 +159,7 @@ const small = (sm) => {
     appsBottom1.src = "./ASSETS/png/069_apps_bottom_1__doob1p0g3gk2_small.png";
     appsBottom2.src = "./ASSETS/png/131_apps_bottom_2__ddvs82ggppyu_small.png";
     appsBottom3.src = "./ASSETS/png/151_apps_bottom_3__fxwuekyzsieu_small.png";
+    desc.style.marginTop = hero.offsetHeight + heroImg.offsetHeight + 'px';
   }
 }
 
