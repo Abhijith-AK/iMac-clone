@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
 if (sm.matches) {
   desc.style.marginTop = hero.offsetHeight + heroImg.offsetHeight + 50 + 'px';
 } else if (md.matches) {
-  desc.style.marginTop = hero.offsetHeight + 400 + 'px';
+  desc.style.marginTop = hero.offsetHeight + 200 + 'px';
 } else {
   desc.style.marginTop = hero.offsetHeight + 'px'
 }
