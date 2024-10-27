@@ -30,7 +30,9 @@ AOS.init();
 var controller = new ScrollMagic.Controller();
 
 if (sm.matches) {
-desc.style.marginTop = hero.offsetHeight + heroImg.offsetHeight + 'px';
+desc.style.marginTop = hero.offsetHeight + heroImg.offsetHeight + 50 + 'px';
+}else{
+  desc.style.marginTop = hero.offsetHeight + 'px'
 }
 
 // Media queries
