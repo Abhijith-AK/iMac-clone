@@ -32,7 +32,7 @@ header {
   align-items: center;
   z-index: 1000;
   position: relative;
-  padding: 0 20%; /* Adjust padding for better responsiveness */
+  padding: 0 20%;
 }
 
 .bar{
@@ -79,7 +79,7 @@ header {
   width: 100vw;
   height: 100%;
   object-fit: cover;
-  z-index: 1; /* Make sure this is lower than the header */
+  z-index: 1;
 }
 
 .hoverBox{
@@ -108,7 +108,6 @@ header {
   margin-bottom: 0.3rem;
 }
 
-/* Show only the specific hoverBox when hovering over the respective link */
 .hover-div .active {
   display: flex;
 }
@@ -121,7 +120,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1001; /* Ensure it's above other elements */
+  z-index: 1001; 
 }
 
 .inner-headings{
@@ -242,22 +241,21 @@ header {
   position: relative;
 }
 
-/* .scaling-text {
-  position: absolute;
-  top: 50px;
-  margin-left: 5rem;
-  font-size: 8rem;
-  transition: font-size 0.3s ease;
-  z-index: 1;
-} */
+.featureHead{
+  position: sticky;
+  top: 2.3rem;
+  width: 5rem;
+  scale: 1;
+}
 
 .featuresDiv h1{
-  padding-left: 22%;
+  padding-left: 2rem;
   padding-bottom: 3%;
 }
 
 .d{
   padding: 0 12%;
+  z-index: 1;
 }
 
 .div-item1{
@@ -362,9 +360,24 @@ header {
   position: relative;
 }
 
+.inner-headings3{
+  height: 5.5rem;
+  line-height: 5rem;
+  overflow: hidden;
+}
+
+.inner-headings3 span{
+  position: relative;
+}
+
 
 .animate2{
   animation: textrot2 6s ease;
+  animation-fill-mode: forwards;
+}
+
+.animate3{
+  animation: textrot3 6s ease;
   animation-fill-mode: forwards;
 }
 
@@ -386,6 +399,33 @@ header {
   }
 }
 
+@keyframes textrot3{
+  0%{
+    top: 0;
+  }
+  15% {
+    top: -5rem;
+  }
+  30% {
+    top: -10rem;
+  }
+  45% {
+    top: -15rem;
+  }
+  60% {
+    top: -20rem;
+  }
+  75% {
+    top: -25rem;
+  }
+  90%{
+    top: -30rem;
+  }
+  100%{
+    top: -35.4rem;
+  }
+}
+
 .specialAud{
   padding: 0 10%;
   background-color: #fafafa;
@@ -395,6 +435,25 @@ header {
   color: #868689;
   line-height: normal;
   font-weight: 500;
+}
+
+.item {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  transform: translateY(0);
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.m3spec1{
+  display:flex;
+}
+
+.m3Spec2{
+  display: none;
 }
 
 .m3imgsec{
@@ -427,6 +486,11 @@ header {
   width: 100%;
   padding: 0 5%;
 }
+
+.appsDiv{
+  display: none;
+}
+
 
 .text-wrapper{
   max-width: 35%;

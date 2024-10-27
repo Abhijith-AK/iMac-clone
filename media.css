@@ -1,3 +1,29 @@
+@media screen and (max-width: 1380px) {
+  .featureHead{
+    position: relative;
+    top: 0;
+    width: auto;
+    scale: 1;
+  }
+
+  .m3spec1{
+    display: none;
+  }
+
+  .m3Spec2{
+    display: block;
+  }
+
+  .appsDiv2{
+    display: none;
+  }
+
+  .appsDiv{
+    display: block;
+  }
+}
+
+
 @media screen and (max-width: 992px) {
   .head1 {
     padding: 0 2%;

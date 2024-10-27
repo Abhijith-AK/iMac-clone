@@ -23,21 +23,90 @@ const env = document.getElementById("env");
 
 var sm = window.matchMedia("(max-width: 692px)");
 var md = window.matchMedia("(max-width: 992px)");
+var lg = window.matchMedia("(min-width: 1380px)")
 
 
 AOS.init();
 // init controller
 var controller = new ScrollMagic.Controller();
 
+hoverBoxes.forEach(box => {
+  box.addEventListener('mouseleave', () => {
+    hoverDiv.style.display = 'none';
+    hoverBoxes.forEach(box => box.classList.remove('active'));
+  });
+});
+
+hoverDiv.addEventListener('mouseleave', () => {
+  hoverDiv.style.display = 'none';
+  hoverBoxes.forEach(box => box.classList.remove('active'));
+});
+
+
+
+setTimeout(() => {
+  image.style.display = 'block';
+  video.style.display = 'none';
+}, 5555);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (lg.matches) {
+    const target = document.querySelector('.aa');
+    const target2 = document.querySelector('.ab');
+    const target3 = document.querySelector('.ac');
+
+    const observerOptions = {
+      root: null,
+      threshold: 0.1
+    };
+
+    // First observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Second observer
+    const observer2 = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate2');
+          observer2.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Third observer
+    const observer3 = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate3');
+          observer3.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    observer.observe(target);
+    observer2.observe(target2);
+    observer3.observe(target3);
+  }
+});
+
+
 if (sm.matches) {
-desc.style.marginTop = hero.offsetHeight + heroImg.offsetHeight + 50 + 'px';
-}else{
+  desc.style.marginTop = hero.offsetHeight + heroImg.offsetHeight + 50 + 'px';
+} else if (md.matches) {
+  desc.style.marginTop = hero.offsetHeight + 400 + 'px';
+} else {
   desc.style.marginTop = hero.offsetHeight + 'px'
 }
 
 // Media queries
-
-
 
 const medium = (md) => {
   if (md.matches) {
@@ -81,15 +150,12 @@ sm.addEventListener("change", () => {
   small(sm);
 })
 
-// Show the hover-div and the corresponding hoverBox when hovering over a link
 links.forEach(link => {
   link.addEventListener('mouseover', (event) => {
     hoverBoxes.forEach(box => box.classList.remove('active'));
 
-    // Get the ID of the hovered link
     const targetId = event.currentTarget.id;
 
-    // Safely select the target hoverBox using its class
     const targetBox = document.querySelector(`.${targetId}`);
 
     check = targetBox == apple || targetBox == bag || targetBox == search;
@@ -103,61 +169,6 @@ links.forEach(link => {
 
   });
 });
-
-// Hide the hover-div and all hoverBoxes when the mouse leaves the hoverBox or hover-div
-hoverBoxes.forEach(box => {
-  box.addEventListener('mouseleave', () => {
-    hoverDiv.style.display = 'none';
-    hoverBoxes.forEach(box => box.classList.remove('active'));
-  });
-});
-
-hoverDiv.addEventListener('mouseleave', () => {
-  hoverDiv.style.display = 'none';
-  hoverBoxes.forEach(box => box.classList.remove('active'));
-});
-
-
-
-setTimeout(() => {
-  image.style.display = 'block';
-  video.style.display = 'none';
-}, 5555);
-
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const target = document.querySelector('.inner-headings span');
-  const target2 = document.querySelector('.inner-headings2 span');
-
-
-  const observerOptions = {
-    root: null,
-    threshold: 0.1
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        target.classList.add('animate');
-        observer.unobserve(entry.target);
-      }
-    })
-  }, observerOptions);
-
-  const observer2 = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        target2.classList.add('animate2');
-        observer.unobserve(entry.target2);
-      }
-    })
-  }, observerOptions);
-
-  observer2.observe(target2);
-
-})
 
 // build scene
 new ScrollMagic.Scene({
@@ -180,3 +191,45 @@ new ScrollMagic.Scene({
   .setClassToggle("#reveal2", "visible") // add class to reveal
   .addTo(controller);
 
+if (lg.matches) {
+  var scaletext = document.getElementById('scale');
+  document.addEventListener('scroll', () => {
+
+    const textElement = document.querySelector('.scaling-text1');
+    const scrollAmount = window.scrollY;
+
+    const minFontSize = .1;
+    const maxFontSize = 5;
+
+    const fontSize = Math.max(maxFontSize - scrollAmount * 0.001, minFontSize);
+
+    textElement.style.scale = fontSize;
+  })
+
+
+  const textItems = document.querySelectorAll('.m3details .item');
+  const imageItems = document.querySelectorAll('.sideMacSec .item');
+  let currentIndex = 0;
+  const startScrollPos = 17500;
+
+  window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY;
+
+    if (scrollPos > startScrollPos) {
+      const adjustedScrollPos = scrollPos - startScrollPos;
+
+      const newIndex = Math.min(Math.floor(adjustedScrollPos / 400), textItems.length - 1);
+
+      if (newIndex !== currentIndex) {
+        textItems[currentIndex].classList.remove('active');
+        imageItems[currentIndex].classList.remove('active');
+
+        currentIndex = newIndex;
+
+        textItems[currentIndex].classList.add('active');
+        imageItems[currentIndex].classList.add('active');
+      }
+    }
+  });
+
+}
